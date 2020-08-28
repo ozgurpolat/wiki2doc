@@ -1,0 +1,124 @@
+ERROR:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:Skipping "wiki2doc = wiki2doc": ImportError: No module named simplemultiproject.model
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[trac] base_url option not set in configuration, generated links may be incorrect
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (No handler matched request to /wiki2doc), <RequestWithSession "GET '/wiki2doc'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (No handler matched request to /wiki2doc), <RequestWithSession "GET '/wiki2doc'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (No handler matched request to /wiki2doc), <RequestWithSession "GET '/wiki2doc'">, referrer 'http://127.0.0.1:8000/'
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (No handler matched request to /wiki2doc), <RequestWithSession "GET '/wiki2doc'">, referrer 'http://127.0.0.1:8000/'
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki'
+ERROR:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:Skipping "wiki2doc = wiki2doc": ImportError: No module named simplemultiproject.model
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[trac] base_url option not set in configuration, generated links may be incorrect
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (No handler matched request to /wiki2doc), <RequestWithSession "GET '/wiki2doc'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki'
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki'
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki'
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/'
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[trac] base_url option not set in configuration, generated links may be incorrect
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/'
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+ERROR:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:Skipping "wiki2doc = wiki2doc": ImportError: No module named enum
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[trac] base_url option not set in configuration, generated links may be incorrect
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/'
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (No handler matched request to /wiki2doc), <RequestWithSession "GET '/wiki2doc'">, referrer None
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+ERROR:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:Skipping "wiki2doc = wiki2doc": ImportError: No module named enum
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[trac] base_url option not set in configuration, generated links may be incorrect
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/'
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/Images'
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (No handler matched request to /wiki2doc), <RequestWithSession "GET '/wiki2doc'">, referrer None
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+ERROR:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:Skipping "wiki2doc = wiki2doc": ImportError: No module named enum
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[trac] base_url option not set in configuration, generated links may be incorrect
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/'
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (No handler matched request to /wiki2doc), <RequestWithSession "GET '/wiki2doc'">, referrer None
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+ERROR:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:Skipping "wiki2doc = wiki2doc": ImportError: No module named enum
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[trac] base_url option not set in configuration, generated links may be incorrect
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/'
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (No handler matched request to /wiki2doc), <RequestWithSession "GET '/wiki2doc'">, referrer None
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (No handler matched request to /wiki2doc), <RequestWithSession "GET '/wiki2doc'">, referrer None
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/'
+ERROR:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:Skipping "wiki2doc = wiki2doc": ImportError: No module named enum
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[trac] base_url option not set in configuration, generated links may be incorrect
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/trac-wiki2doc'
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/trac-wiki2doc/admin'
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (No handler matched request to /wiki2doc), <RequestWithSession "GET '/wiki2doc'">, referrer None
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/trac-wiki2doc/wiki2doc'
+ERROR:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:Skipping "wiki2doc = wiki2doc": ImportError: No module named enum
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[trac] base_url option not set in configuration, generated links may be incorrect
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/'
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (No handler matched request to /wiki2doc), <RequestWithSession "GET '/wiki2doc'">, referrer None
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[trac] base_url option not set in configuration, generated links may be incorrect
+ERROR:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] Internal Server Error: <RequestWithSession "GET '/'">, referrer None
+Traceback (most recent call last):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 639, in dispatch_request
+    dispatcher.dispatch(req)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 271, in dispatch
+    method=method)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/chrome.py", line 1443, in render_template
+    fragment, iterable, method)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/chrome.py", line 1497, in _render_jinja_template
+    domain)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/chrome.py", line 1607, in prepare_template
+    template = self._load_jinja_template(filename, text)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/chrome.py", line 1387, in _load_jinja_template
+    ] + self.get_all_templates_dirs()
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/chrome.py", line 816, in get_all_templates_dirs
+    dirs.extend(provider.get_templates_dirs() or [])
+AttributeError: 'Wiki2Doc' object has no attribute 'get_templates_dirs'
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (No handler matched request to /favicon.ico), <RequestWithSession "GET '/favicon.ico'">, referrer 'http://127.0.0.1:8000/'
+ERROR:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:Skipping "wiki2doc = wiki2doc": ImportError: No module named docx
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[trac] base_url option not set in configuration, generated links may be incorrect
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/'
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/'
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/WikiStart'
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/prefs'
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/TracGuide'
+ERROR:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:Skipping "wiki2doc = wiki2doc": ImportError: No module named docx
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[trac] base_url option not set in configuration, generated links may be incorrect
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/trac-wiki2doc'
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (No handler matched request to /wiki2doc), <RequestWithSession "GET '/wiki2doc'">, referrer None
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+WARNING:Trac.39b23e0b66b3c780c187cb0cdd2d4a65f04e993d:[127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/trac-wiki2doc/wiki2doc'

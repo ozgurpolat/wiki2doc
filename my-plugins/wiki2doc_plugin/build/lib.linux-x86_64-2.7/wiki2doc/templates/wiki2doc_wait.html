@@ -1,0 +1,143 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:py="http://genshi.edgewall.org/"
+      xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="layout.html" />
+
+  <!-- Select the project, milestone passed in data['form'] -->
+  <select py:match="form//select" py:attrs="select('@*')"
+          py:with="select_name = str(select('@name'))"
+          py:content="select('option|optgroup')" />
+  <option py:match="form//select//option" py:attrs="select('@*')"
+          py:with="sel_value = form.get(select_name)"
+          selected="${sel_value and (str(select('@value')) == sel_value) or None}"
+          py:content="select('text()')" />
+
+  <!-- Only display the milestones belonging to the selected project
+       The js code is in comments to protect the '<' characters.
+       Alternatives would be to move the code to a separate file,
+       or to use CDATA tags -->
+
+  <head>
+    <style>
+      #loader {
+        border: 12px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 12px solid #3498db;
+        width: 90px;
+        height: 90px;
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+      }
+
+      @-webkit-keyframes spin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+      }
+
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
+    <title>Wiki to Doc</title>
+    <script type="text/javascript">
+      /*<![CDATA[*/
+      jQuery(document).ready(function($) {
+          document.getElementById("loader").style.display = 'none';
+          var error_list = []
+          var errorlog = document.getElementById('errorlog');
+
+          n = errorlog.options.length;
+          for (var i = 0; i < errorlog.options.length; i++) {
+              var e = errorlog.options[i];
+              error_list.push({'message': e.className, 'name': e.label});
+          }
+          console.log("n=" + n);
+          console.log(error_list);
+          if(errorlog.options.length > 0){
+              document.getElementById("error_list").style.display = 'block';
+              document.getElementById("br_errorlog").style.display = 'block';
+              document.getElementById("error_list").style.border = "thin solid #FF0000";
+              $("#error_list").append ( '<p style="color:#FF0000;">FOUND FOLLOWING ERROR/S:</p>' );
+	          for (var i = 0; i < error_list.length; i++) {
+
+	              var anchor_spec = '';
+	              var anchor_spec_final = '';
+	
+	              if(error_list[i]['name'] !== "None"){
+	                  anchor_spec = "<a href="+ error_list[i]['name'] + ">Wiki Page (Spec Page)</a>";
+	                  anchor_spec_final = anchor_spec + ": ";
+	              }else if(error_list[i]['name'] === "None"){
+	                  anchor_spec_final = "";
+	              }
+
+	              $("#error_list").append ( "<p>" + anchor_spec_final + error_list[i]['message'] + "</p>" );
+	          }
+	          error_list = []
+          }
+
+          $("#create_report").click(function(){
+			  document.getElementById("loader").style.display = 'block';
+              task = document.getElementById('task')
+              selected_text = $('#task option:selected').text();
+			  console.log('selected_text:' + selected_text)
+			  selected_text = 'test';
+			  console.log('2.selected_text:' + selected_text)
+              if (selected_text === 'Task ID, Task Name, Task Type' ||
+                  selected_text === '' ||
+                  selected_text === null) {
+	                  console.log('3.selected_text:' + selected_text)
+                      $( "#dialog" ).dialog();
+                      return false; // cancel submit
+              }
+              window.sessionStorage.clear();
+              $( "#dialog_wait" ).dialog();
+			  //document.getElementById("loader").style.display = 'none';
+              return true; // allow submit
+          });
+      });
+      /*]]>*/
+    </script>
+  </head>
+
+  <body>
+    <div id="ctxtnav" class="nav"></div>
+
+    <div id="content" class="wiki2doc">
+      <h1>Wiki to Doc!</h1>
+      <!--<img src="${href.chrome('/hw/images/wiki2doc.jpg')}" />-->
+    </div>
+
+    <h1>Wiki to Doc!</h1>
+    <!--<div id="error_list" title="List of Errors!" style="display: block;">
+    </div>
+    <br id="br_errorlog" style="display: block;"/>
+    <select id="errorlog" name="errorlog" style="display: block;">
+        <option py:for="(message, name) in errorlog" class="$message" value="$name">$name</option>
+    </select>
+    <form id="autorep" method="post">
+      <label>Document Template link:</label>
+	  <input id="get_doc_template" type="text" name="get_doc_template" value="http://127.0.0.1:8000/attachment/wiki/Attachments/template.docx"/>
+      <br/>
+	  <label>Wiki Page link:</label>
+      <input id="get_wiki_link" type="text" name="get_wiki_link" value="http://127.0.0.1:8000/wiki/Images"/>
+      <input id="create_report" type="submit" name="create_report" value="Create Wiki Doc"/>
+    </form>-->
+
+    <p><i>Note:...</i></p>
+    <div id="dialog" title="Missing selection!" style="display: none;">
+       <p><i>Please select:</i></p>
+       <p><i>1. Project and IGR milestone that will populate APO specification checkbuttons</i></p>
+       <p><i>2. Select OGR milestone that will populate ogr tasks dropdown menu</i></p>
+       <p><i>3. Select APO specification checkboxes</i></p>
+       <p><i>4. Select an OGR task before clicking on Go button.</i></p>
+    </div>
+    <div id="dialog_wait" title="Your request has been submitted!" style="display: none;">
+       <p>Selected report is being prepared! When it is completed, you will receive a file with docm extension. Please wait until the file is ready to download!</p>
+    </div>
+    <div id="loader"></div>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+
+        [trac.plugins]
+        wiki2doc = wiki2doc
+    

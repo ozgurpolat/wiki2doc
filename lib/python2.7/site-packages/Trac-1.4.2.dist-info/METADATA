@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: Trac
+Version: 1.4.2
+Summary: Integrated SCM, wiki, issue tracker and project environment
+Home-page: https://trac.edgewall.org/
+Author: Edgewall Software
+Author-email: trac-dev@googlegroups.com
+License: BSD
+Download-URL: https://trac.edgewall.org/wiki/TracDownload
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Trac
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Software Development :: Bug Tracking
+Classifier: Topic :: Software Development :: Version Control
+Requires-Dist: setuptools (>=0.6)
+Requires-Dist: jinja2 (>=2.9.3)
+Provides-Extra: babel
+Requires-Dist: Babel (>=0.9.5) ; extra == 'babel'
+Provides-Extra: genshi
+Requires-Dist: Genshi (>=0.7) ; extra == 'genshi'
+Provides-Extra: mysql
+Requires-Dist: PyMySQL ; extra == 'mysql'
+Provides-Extra: postgresql
+Requires-Dist: psycopg2 (>=2.0) ; extra == 'postgresql'
+Provides-Extra: psycopg2
+Requires-Dist: psycopg2 (>=2.0) ; extra == 'psycopg2'
+Provides-Extra: psycopg2-binary
+Requires-Dist: psycopg2-binary ; extra == 'psycopg2-binary'
+Provides-Extra: pygments
+Requires-Dist: Pygments (>=1.0) ; extra == 'pygments'
+Provides-Extra: rest
+Requires-Dist: docutils (>=0.3.9) ; extra == 'rest'
+Provides-Extra: textile
+Requires-Dist: textile (>=2.0) ; extra == 'textile'
+
+About Trac
+==========
+
+Trac is a minimalistic web-based software project management and
+bug/issue tracking system. It provides an interface to the Git and
+Subversion revision control systems, an integrated wiki, flexible
+issue tracking and convenient report facilities.
+
+Trac is distributed using the modified BSD License.
+
+* For installation instructions, please see INSTALL.rst or the
+  trac/wiki/default-pages/TracInstall page for complete, up-to-date
+  instructions
+
+* If you are upgrading from a previous Trac version, please read
+  UPGRADE.rst or the trac/wiki/default-pages/TracUpgrade page for
+  complete, up-to-date instructions
+
+You might also want to take a look at the RELEASE.rst and ChangeLog files
+for more information about this release.
+
+Otherwise, the primary source of information is the main Trac web site:
+
+ <https://trac.edgewall.org/>
+
+We hope you enjoy it,
+
+/The Trac Team
+
+
