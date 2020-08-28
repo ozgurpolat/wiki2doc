@@ -6,7 +6,7 @@
       xmlns:xi="http://www.w3.org/2001/XInclude">
   <xi:include href="layout.html" />
 
-  <!-- Select the information passed in data['form'] -->
+  <!-- Select the project, milestone passed in data['form'] -->
   <select py:match="form//select" py:attrs="select('@*')"
           py:with="select_name = str(select('@name'))"
           py:content="select('option|optgroup')" />
@@ -79,23 +79,40 @@
 	          error_list = []
           }
 
+		  var form = document.getElementById('form');
+
+          	if(form.options.length > 0){
+	          	n = form.options.length;
+	          	for (var i = 0; i < form.options.length; i++) {
+	              	var e = form.options[i];
+	              	
+				  	var get_doc_template = document.getElementById('get_doc_template');		  
+					var get_wiki_link = document.getElementById('get_wiki_link');
+					if(e.className === get_doc_template.id){
+						get_doc_template.value=e.value
+				  	}
+					if(e.className === get_wiki_link.id){
+						get_wiki_link.value=e.value
+				  	}			
+	          	}
+          }
+
           $("#create_report").click(function(){
 			  document.getElementById("loader").style.display = 'block';
-              get_doc_template_text = document.getElementById("get_doc_template").value;
-			  get_wiki_link_text = document.getElementById("get_doc_template").value;				
-			  console.log('get_doc_template_text:' + get_doc_template_text)
-	          console.log('get_doc_template_text:' + get_doc_template_text)
-
-              if (get_doc_template_text  === null || 
-                  get_doc_template_text.match(/^ *$/) !== null ||
-                  get_wiki_link_text=== null || 
-                  get_wiki_link_text.match(/^ *$/) !== null) {
-
+              task = document.getElementById('task')
+              selected_text = $('#task option:selected').text();
+			  console.log('selected_text:' + selected_text)
+			  selected_text = 'test';
+			  console.log('2.selected_text:' + selected_text)
+              if (selected_text === 'Task ID, Task Name, Task Type' ||
+                  selected_text === '' ||
+                  selected_text === null) {
+	                  console.log('3.selected_text:' + selected_text)
                       $( "#dialog" ).dialog();
                       return false; // cancel submit
               }
               window.sessionStorage.clear();
-              $( "#dialog_wait" ).dialog();
+              $("#dialog_wait" ).dialog();
 			  //document.getElementById("loader").style.display = 'none';
               return true; // allow submit
           });
@@ -108,11 +125,10 @@
     <div id="ctxtnav" class="nav"></div>
 
     <div id="content" class="wiki2doc">
-      <h1>Wiki to Doc!</h1>
+      <h1>Wiki2Doc!</h1>
       <img src="${href.chrome('/hw/images/wiki2doc.jpg')}" />
     </div>
 
-    <h1>Wiki to Doc!</h1>
     <div id="error_list" title="List of Errors!" style="display: block;">
     </div>
     <br id="br_errorlog" style="display: block;"/>
@@ -120,14 +136,14 @@
         <option py:for="(message, name) in errorlog" class="$message" value="$name">$name</option>
     </select>
     <select id="form" name="form" style="display: block;">
-        <option py:for="value in get_doc_template" value="$value">$value</option>
+        <option py:for="(key, value) in form.items()" class="$key" value="$value">$key, $value</option>
     </select>
     <form id="wiki2doc" method="post">
       <label>Document Template link:</label>
-	  <input id="get_doc_template" type="text" name="get_doc_template" value="$get_doc_template"/>
+	  <input id="get_doc_template" type="text" name="get_doc_template" value=""/>
       <br/>
 	  <label>Wiki Page link:</label>
-      <input id="get_wiki_link" type="text" name="get_wiki_link" value="$get_wiki_link"/>
+      <input id="get_wiki_link" type="text" name="get_wiki_link" value=""/>
       <input id="create_report" type="submit" name="create_report" value="Create Wiki Doc"/>
     </form>
 

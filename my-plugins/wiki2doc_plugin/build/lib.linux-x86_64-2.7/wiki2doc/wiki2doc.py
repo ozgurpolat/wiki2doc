@@ -47,11 +47,10 @@ class Wiki2Doc(Component):
         """ grab the 3 environments """
         self.data = {}
 
-    def set_data(self, *args):
+    def set_data(self, req_keys):
         """ Set self.data that will be passed to
             the template."""
 
-        print(args[0])
         #self.data = {
         #    'create_report': args[0],
         #    'form_token': args[1],
@@ -59,16 +58,23 @@ class Wiki2Doc(Component):
         #}
 
         self.data['form'] = {
-             'create_report': to_unicode(args[0][0]),
-             'form_token': to_unicode(args[0][1]),
-             'get_wiki_link': to_unicode(args[0][2]),
-             'get_doc_template': to_unicode(args[0][3]),
+             'create_report': to_unicode(req_keys['create_report']),
+             'form_token': to_unicode(req_keys['form_token']),
+             'get_doc_template': to_unicode(req_keys['get_doc_template']),
+             'get_wiki_link': to_unicode(req_keys['get_wiki_link']),
         }
 
-    def set_default_data(self, req_keys):
-        """ Sets default self.data for
-            the intial loading of Autorep."""
+        print('self.data', self.data)
 
+    def set_default_data(self):
+        """ Sets default self.data for
+            the intial loading of wiki2doc."""
+
+        req_keys = {'create_report': u'Create Wiki Doc',
+                    'form_token': u'a59a7f79fdf7bd881c7b4197',
+                    'get_doc_template': u'http://127.0.0.1:8000/attachment/wiki/Attachments/template.docx',
+                    'get_wiki_link': u'http://127.0.0.1:8000/wiki/helloworld',}
+        
         print('req_keys', req_keys)
         self.set_data(req_keys)
 
@@ -104,14 +110,10 @@ class Wiki2Doc(Component):
         self.errorlog = []
         action = req.args.get('create_report', '__FORM_TOKEN')
         req_keys = set_req_keys(req)
-        print('req keys', req_keys)
         
-        req_keys = [u'Create Wiki Doc',
-                    u'7b0000b724e3e931248daae8',
-                    u'http://127.0.0.1:8000/wiki/helloworld',
-                    u'http://127.0.0.1:8000/attachment/wiki/Attachments/template.docx']
+        if all(x is None for x in req_keys):
+            self.set_default_data()
         
-        self.set_default_data(req_keys)
         print('req keys', req_keys)
         print('action:', action)
         print('self.env', self.env)
@@ -158,12 +160,14 @@ class Wiki2Doc(Component):
                 print('errorlog', errorlog)
                   
                 if len(errorlog) == 0:
+                    
                     self.data['form'] = {
                          'create_report': to_unicode(req_keys[0]),
                          'form_token': to_unicode(req_keys[1]),
-                         'get_wiki_link': to_unicode(req_keys[2]),
-                         'get_doc_template': to_unicode(req_keys[3]),
+                         'get_doc_template': to_unicode(req_keys[2]),
+                         'get_wiki_link': to_unicode(req_keys[3]),
                     }
+                    
                     length = len(content)
                     req.send_response(200)
                     req.send_header(

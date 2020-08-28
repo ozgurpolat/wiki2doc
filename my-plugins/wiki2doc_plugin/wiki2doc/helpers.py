@@ -56,6 +56,7 @@ def set_req_keys(req):
     create_report = None
     form_token = None
     get_wiki_link = None
+    get_doc_template = None
       
     for key, value in req.args.iteritems():
         if key == 'create_report':
@@ -64,10 +65,13 @@ def set_req_keys(req):
             form_token = value
         elif key == 'get_wiki_link':
             get_wiki_link = value
+        elif key == 'get_doc_template':
+            get_doc_template = value
               
     req_keys = [create_report,
                 form_token,
-                get_wiki_link]
+                get_wiki_link,
+                get_doc_template]
      
     return req_keys
 
