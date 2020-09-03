@@ -10,8 +10,27 @@ logging.basicConfig(level=logging.DEBUG, filename='test.log', filemode='w')
 log = logging.getLogger()
 
 from wiki2doc.wiki2doc import Wiki2Doc
-
 from trac.test import EnvironmentStub, MockRequest
+from datetime import datetime, timedelta
+from trac.util.datefmt import utc
+from trac.wiki import WikiPage
+from trac.attachment import Attachment
+from StringIO import StringIO
+import tempfile
+from mock import patch
+from trac.wiki.web_ui import DefaultWikiPolicy, WikiModule
+from wiki2doc.helpers import get_base_url, request_redirect
+from trac.web.api import RequestDone
+import os
+
+def _insert_wiki_pages(env, pages):
+    """ insert wiki pages """
+    time = datetime(2001, 1, 1, 1, 1, 1, 0, utc)
+    for name, text in pages.iteritems():
+        page = WikiPage(env)
+        page.name = name
+        page.text = text
+        page.save('author', 'comment', time)
 
 class Wiki2DocApiTestCase(unittest.TestCase): # pylint: disable=too-many-public-methods
     """ Tests for the basic wiki2doc api """
@@ -19,6 +38,24 @@ class Wiki2DocApiTestCase(unittest.TestCase): # pylint: disable=too-many-public-
     def setUp(self):
         self.tktids = None
         self.gr_api = Wiki2Doc(EnvironmentStub()) # pylint: disable=too-many-function-args
+
+        pages = {
+                    'helloworld': """=Lorem ipsum dolor sit amet,
+        consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+        [[Image(Image1.jpg)]]\ninvidunt ut labore et dolore magna 
+        aliquyam erat, sed diam \n[[Image(Image2.jpg)])]\nvoluptua.""",
+                    'attachments': """=Attachments"""}
+
+        _insert_wiki_pages(self.gr_api.env, pages)
+        spec = 'attachments'
+        page = WikiPage(self.gr_api.env, spec)
+        attachment = Attachment(page.env,
+                                page.realm,
+                                page.resource.id)
+
+        attachment.insert("template.docx", StringIO(''), 0)
+        log.debug('dir(attachment){}'.format(dir(attachment)))
+        log.debug('os.getcwd(): {}'.format(os.getcwd()))
     
     def test_upper(self):
         self.assertEqual('foo'.upper(), 'FOO')
@@ -26,31 +63,25 @@ class Wiki2DocApiTestCase(unittest.TestCase): # pylint: disable=too-many-public-
     def test_process_request(self):
         """ Test process_request method """
 
+        self.gr_api.errorlog = []
+        
         # test template data for initial view
-        req = MockRequest(self.gr_api.env, method='POST',
-                          args={'create_report': 'proj3',
-                                'form_token': 'bar OGR2',
-                                'get_wiki_link': 'http://127.0.0.1:8000/wiki/helloworld'})
+#         req = MockRequest(self.gr_api.env, method='GET',
+#                           args={'create_report': u'Create Wiki Doc', 
+#                                 '__FORM_TOKEN': u'a59a7f79fdf7bd881c7b4197', 
+#                                 'get_doc_template': u'http://127.0.0.1:8000/attachment/wiki/Attachments/template.docx', 
+#                                 'get_wiki_link': u'http://127.0.0.1:8000/wiki/helloworld'})
+        req = MockRequest(self.gr_api.env, method='GET', args={})
         
         template, data, _ = Wiki2Doc.process_request(self.gr_api, req) # pylint: disable=unpacking-non-sequence
+        log.debug('template; {}, data:{}'.format(template, data))
+        
         self.assertEqual(template, "wiki2doc.html", "template")
 
-        expected_data = {'tasks': set([(u'Milestone',
-                                        u'Task ID, Task Name, Task Type')]),
-                         'igrtasks': set([(u'Milestone',
-                                           u'Task ID, Task Name, Task Type')]),
-                         'form': {'project': u'proj1',
-                                  'igrmilestone': u'foo OGR1',
-                                  'igrtask': u'None',
-                                  'task': u'None',
-                                  'milestone': u'foo OGR1'},
-                         'igrmilestones': [(u'proj1', u'foo IGR'),
-                                           (u'proj2', u'bar IGR')],
-                         'milestones': [(u'proj1', u'foo OGR1'),
-                                        (u'proj1', u'foo OGR2'),
-                                        (u'proj2', u'bar OGR2')],
-                         'events': None,
-                         'projects': [u'proj1', u'proj2']}
+        expected_data = {'form': {'create_report': u'Create Wiki Doc',
+                                  '__FORM_TOKEN': u'a59a7f79fdf7bd881c7b4197',
+                                  'get_doc_template': u'http://example.org/trac.cgi/attachment/wiki/attachments/template.docx',
+                                  'get_wiki_link': u'http://example.org/trac.cgi/wiki/helloworld'}}
 
         log.debug('{}'.format(data))
 
@@ -59,27 +90,39 @@ class Wiki2DocApiTestCase(unittest.TestCase): # pylint: disable=too-many-public-
                          "Dictionary data returned by " +\
                          "process_request does not match")
 
+        get_doc_template = get_base_url(req) + u'attachment/wiki/attachments/template.docx'
+        get_wiki_link = get_base_url(req) + u'wiki/helloworld'
+        
+        args = {'create_report': u'Create Wiki Doc',
+                '__FORM_TOKEN': u'a59a7f79fdf7bd881c7b4197',
+                'get_doc_template': get_doc_template,
+                'get_wiki_link': get_wiki_link,}
+        
         # test redirect
-        req = MockRequest(self.gr_api.envs['task'], method='POST',
-                          args={'project': 'proj3',
-                                'milestone': 'baz OGR2',
-                                'task': 'task',
-                                'create_report': 'create_report'})
-
+        req = MockRequest(self.gr_api.env, method='POST', args=args)
+        #resp = WikiModule(self.gr_api.env).process_request(req)
+        #log.debug('resp:{}'.format(resp))
+        log.debug('dir(req):{}'.format(dir(req)))
+        log.debug('req.headers_sent:{}'.format(req.headers_sent))
+        log.debug('query_string:{}'.format(req.query_string))
+        log.debug('path_info:{}'.format(req.path_info))
+        log.debug('headers_sent:{}'.format(req.headers_sent))
+        log.debug('redirect:{}'.format(req.redirect))
+        log.debug('req.args:{}'.format(req.args))
+ 
         with patch('trac.web.api.Request.redirect') as mock_redirect:
+            
+            log.debug('req.args important: {}'.format(req.args))
+            
             try:
-                _, data, _ = AutoRep.process_request(self.gr_api, req) # pylint: disable=unpacking-non-sequence
-                mock_redirect.assert_called_once_with(
-                    '/trac.cgi/autorep?project=proj3&' +\
-                    'milestone=baz OGR2&task=task&create_report=create_report')
+                _, data, _ = Wiki2Doc.process_request(self.gr_api, req) # pylint: disable=unpacking-non-sequence
+                
+                log.debug('data: {}'.format(data))
+                req_redirect = request_redirect(req) # pylint: disable=unpacking-non-sequence
+                log.debug('req_redirect{}'.format(req_redirect))
+                mock_redirect.assert_called_once_with('/trac.cgi/wiki2doc?create_report=Create%20Wiki%20Doc&__FORM_TOKEN=a59a7f79fdf7bd881c7b4197&get_doc_template=http%3A//example.org/trac.cgi/attachment/wiki/attachments/template.docx&get_wiki_link=http%3A//example.org/trac.cgi/wiki/helloworld')
             except RequestDone:
-                self.assertEqual(data, {
-                    'tasks': [(u'bar OGR2', u'Task ID, Task Name, Task Type')],
-                    'milestones': [(u'proj1', u'foo OGR1'),
-                                   (u'proj1', u'foo OGR2'),
-                                   (u'proj2', u'bar OGR2')],
-                    'form': {'project': 'proj1', 'milestone': 'foo OGR1'},
-                    'events': None, 'projects': ['proj1', 'proj2']}, "data")
+                self.assertEqual(data, {}, "data")
             except TypeError:
                 pass
 

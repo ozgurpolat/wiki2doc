@@ -40,6 +40,30 @@ FILTERS = [(r'^(.*)\\\\{2,}(\s*)(.*)$', r'(.*?)\\\\{2,}(\s*)'),
            (r'(.*)\[\s*(?:=|\s*)\#(Ref\d+)\s*\](.*)$',
             r'(.*?)\[\s*(?:=|\s*)\#(Ref\d+)\s*\]')]
 
+def request_redirect(req):
+    """ Redirect request """
+
+    if req.method == 'POST':
+        if (req.args.get('create_report') is not None) and\
+            (req.args.get('__FORM_TOKEN') is not None) and\
+            (req.args.get('get_doc_template') is not None) and\
+            (req.args.get('get_wiki_link') is not None):
+            link = '/wiki2doc?create_report=' + \
+                urllib.quote(req.args.get('create_report')) + \
+                '&__FORM_TOKEN=' + \
+                urllib.quote(req.args.get('__FORM_TOKEN')) + \
+                '&get_doc_template=' + \
+                urllib.quote(req.args.get('get_doc_template')) + \
+                '&get_wiki_link=' + \
+                urllib.quote(req.args.get('get_wiki_link'))
+
+            req.redirect(req.base_path + link)
+
+        else:
+            return False
+
+        return True
+
 def get_base_url(req):
     """ Returns base url from the request object. """
     base_url = req.base_url

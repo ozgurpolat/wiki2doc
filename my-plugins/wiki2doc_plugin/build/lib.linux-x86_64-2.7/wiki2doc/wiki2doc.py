@@ -16,7 +16,8 @@ from trac.util.text import to_unicode
 from trac.util import content_disposition
 from helpers import get_base_url
 from helpers import set_req_keys
-from helpers import get_tables_in_text 
+from helpers import get_tables_in_text
+from helpers import get_base_url
 from doc import Doc
 import numpy as np
 from trac.util.html import html
@@ -31,6 +32,7 @@ from htmlentitydefs import name2codepoint
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from itertools import groupby
+import sys
 
 
 TEMPLATE_INSTANCE = 'req'
@@ -59,24 +61,29 @@ class Wiki2Doc(Component):
 
         self.data['form'] = {
              'create_report': to_unicode(req_keys['create_report']),
-             'form_token': to_unicode(req_keys['form_token']),
+             '__FORM_TOKEN': to_unicode(req_keys['__FORM_TOKEN']),
              'get_doc_template': to_unicode(req_keys['get_doc_template']),
              'get_wiki_link': to_unicode(req_keys['get_wiki_link']),
         }
 
         print('self.data', self.data)
 
-    def set_default_data(self):
+    def set_default_data(self, req):
         """ Sets default self.data for
             the intial loading of wiki2doc."""
 
+        get_doc_template = get_base_url(req) + u'attachment/wiki/attachments/template.docx'
+        get_wiki_link = get_base_url(req) + u'wiki/helloworld'
+        
         req_keys = {'create_report': u'Create Wiki Doc',
-                    'form_token': u'a59a7f79fdf7bd881c7b4197',
-                    'get_doc_template': u'http://127.0.0.1:8000/attachment/wiki/Attachments/template.docx',
-                    'get_wiki_link': u'http://127.0.0.1:8000/wiki/helloworld',}
+                    '__FORM_TOKEN': u'a59a7f79fdf7bd881c7b4197',
+                    'get_doc_template': get_doc_template,
+                    'get_wiki_link': get_wiki_link,}
         
         print('req_keys', req_keys)
         self.set_data(req_keys)
+        
+        return req_keys
 
     # INavigationContributor methods
     def get_active_navigation_item(self, req):
@@ -105,16 +112,23 @@ class Wiki2Doc(Component):
         metadata) triple, where metadata is a dict with hints for the
         template engine or the web front-end."""
 
-        #print('DIR_req', dir(req))
-
+        print('DIR_req', dir(req))
+        print('dir(req):{}'.format(dir(req)))
+        print('query_string:{}'.format(req.query_string))
+        print('path_info:{}'.format(req.path_info))
+        
         self.errorlog = []
         action = req.args.get('create_report', '__FORM_TOKEN')
         req_keys = set_req_keys(req)
+        print('FIRST: req keys', req_keys)
         
         if all(x is None for x in req_keys):
-            self.set_default_data()
+            print('SECOND: req keys', req_keys)
+            self.set_default_data(req)
+        else:
+            print("ELSE")
         
-        print('req keys', req_keys)
+        print('THIRD:req keys', req_keys)
         print('action:', action)
         print('self.env', self.env)
 
@@ -160,10 +174,10 @@ class Wiki2Doc(Component):
                 print('errorlog', errorlog)
                   
                 if len(errorlog) == 0:
-                    
+                    print('PASSED!')
                     self.data['form'] = {
                          'create_report': to_unicode(req_keys[0]),
-                         'form_token': to_unicode(req_keys[1]),
+                         '__FORM_TOKEN': to_unicode(req_keys[1]),
                          'get_doc_template': to_unicode(req_keys[2]),
                          'get_wiki_link': to_unicode(req_keys[3]),
                     }
@@ -217,6 +231,7 @@ class Wiki2Doc(Component):
         for attachment in Attachment.select(self.env, 'wiki', TEMPLATE_PAGE):
             print('attachment.filename', attachment.filename, 'TEMPLATE_NAME', TEMPLATE_NAME)
             if attachment.filename == TEMPLATE_NAME:
+                print('attachment.path', attachment.path)
                 return attachment.path
         self.errorlog.append(
             ("Attachment {} could not be found at {}.".\
@@ -242,26 +257,25 @@ class Wiki2Doc(Component):
             create report tasks."""
  
         document = self.create_document(req)
- 
-         
-         
-        sections = self.get_images_in_text(page, req)
-        print('1.sections', sections)
-         
-        #sections = np.array(sections)
-         
-        #print('shape', sections.shape)
-         
-        sections = get_tables_in_text(sections)
-        print('2.sections', sections)
-         
-        document.add_document(sections)
-        print('OK So far after document.add_document(sections)')
-        return self.errorlog, document.get_content()
+    
+        if document != None:
+            sections = self.get_images_in_text(page, req)
+            print('1.sections', sections)
+             
+            #sections = np.array(sections)
+             
+            #print('shape', sections.shape)
+             
+            sections = get_tables_in_text(sections)
+            print('2.sections', sections)
+             
+            document.add_document(sections)
+            print('OK So far after document.add_document(sections)')
+            return self.errorlog, document.get_content()
      
     def create_document(self, req):
         """ Creates document class """
- 
+        print('req.path', req.href, req.base_path, req.base_url, req.path_info, req.query_string)
         args = []
  
         print('self.get_template:', self.get_template(req))
@@ -270,10 +284,15 @@ class Wiki2Doc(Component):
                 self.env,
                 self,
                 req]
-          
-        document = Doc(args)
- 
-        return document
+
+        try:
+            document = Doc(args)
+            return document
+        except:
+            self.errorlog.append(("Document could not be created due to unexpected error: {}.".format(sys.exc_info()[0]), req.args))
+            print("UDocument could not be created due to unexpected error:", sys.exc_info()[0]) 
+        
+        return None
  
     def get_images_in_text(self, page, req):
         """ given a list of sections, returns a list of sections
