@@ -272,6 +272,8 @@ class Wiki2Doc(Component):
             document.add_document(sections)
             print('OK So far after document.add_document(sections)')
             return self.errorlog, document.get_content()
+        else:
+            return self.errorlog, None
      
     def create_document(self, req):
         """ Creates document class """
@@ -363,13 +365,14 @@ class Wiki2Doc(Component):
                                                 page.realm,
                                                 page.resource.id):
                 
-                print('attachment.filename ==? filename', attachment.filename, filename)
+                print('Inside get_image_file attachment.filename ==? filename', attachment.filename, filename)
                 
                 if attachment.filename == filename:
 #                    path = str(attachment.path)
+                    print("Inside get_image_file:", attachment.filename, filename)
                     return attachment.path
             self.errorlog.append(
-                ("Attachment {} could not be found at {}".\
+                ("Attachment image {} could not be found at {}".\
                  format(filename, page.resource.id),
                  page_path))
         else:

@@ -2,8 +2,8 @@ DEBUG:trac.test:Workflow actions at initialization: defaultdict(<type 'dict'>, {
 
 DEBUG:trac.test:action controllers for ticket workflow: ['ConfigurableTicketWorkflow']
 INFO:trac.test:New attachment: wiki:attachments: template.docx by None
-DEBUG:root:dir(attachment)['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_create_unique_file', '_extension_re', '_fetch', '_from_database', '_get_hashed_filename', '_get_path', '_is_valid_path', '_move', 'author', 'date', 'delete', 'delete_all', 'description', 'env', 'filename', 'insert', 'move', 'open', 'parent_id', 'parent_realm', 'path', 'realm', 'reparent', 'reparent_all', 'resource', 'select', 'size', 'title']
-DEBUG:root:os.getcwd(): /home/ozgur/my-trac/my-plugins/wiki2doc_plugin
+INFO:trac.test:New attachment: wiki:helloworld: Image1.jpg by None
+INFO:trac.test:New attachment: wiki:helloworld: Image2.jpg by None
 DEBUG:trac.test:Prepare chrome data for request
 DEBUG:root:template; wiki2doc.html, data:{'form': {'create_report': u'Create Wiki Doc', '__FORM_TOKEN': u'a59a7f79fdf7bd881c7b4197', 'get_doc_template': u'http://example.org/trac.cgi/attachment/wiki/attachments/template.docx', 'get_wiki_link': u'http://example.org/trac.cgi/wiki/helloworld'}}
 DEBUG:root:{'form': {'create_report': u'Create Wiki Doc', '__FORM_TOKEN': u'a59a7f79fdf7bd881c7b4197', 'get_doc_template': u'http://example.org/trac.cgi/attachment/wiki/attachments/template.docx', 'get_wiki_link': u'http://example.org/trac.cgi/wiki/helloworld'}}
@@ -15,9 +15,10 @@ DEBUG:root:headers_sent:{}
 DEBUG:root:redirect:<bound method Mock.redirect of <Mock "POST '/'">>
 DEBUG:root:req.args:{'create_report': u'Create Wiki Doc', '__FORM_TOKEN': u'a59a7f79fdf7bd881c7b4197', 'get_doc_template': u'http://example.org/trac.cgi/attachment/wiki/attachments/template.docx', 'get_wiki_link': u'http://example.org/trac.cgi/wiki/helloworld'}
 DEBUG:root:req.args important: {'create_report': u'Create Wiki Doc', '__FORM_TOKEN': u'a59a7f79fdf7bd881c7b4197', 'get_doc_template': u'http://example.org/trac.cgi/attachment/wiki/attachments/template.docx', 'get_wiki_link': u'http://example.org/trac.cgi/wiki/helloworld'}
+DEBUG:root:IMPORTANT data: {}
 DEBUG:trac.test:Workflow actions at initialization: defaultdict(<type 'dict'>, {u'resolve': {u'operations': [u'set_resolution'], 'name': '', 'default': 0, 'newstate': u'closed', 'label': u'resolve', 'oldstates': [u'new', u'assigned', u'accepted', u'reopened'], u'permissions': [u'TICKET_MODIFY']}, u'create': {'operations': [], 'name': '', u'default': 1, 'newstate': u'new', 'label': u'create', 'oldstates': [None], 'permissions': []}, u'accept': {u'operations': [u'set_owner_to_self'], 'name': '', 'default': 0, 'newstate': u'accepted', 'label': u'accept', 'oldstates': [u'new', u'assigned', u'accepted', u'reopened'], u'permissions': [u'TICKET_MODIFY']}, u'leave': {u'operations': [u'leave_status'], 'name': '', u'default': 1, 'newstate': u'*', 'label': u'leave', 'oldstates': [u'*'], 'permissions': []}, u'reopen': {u'operations': [u'del_resolution'], 'name': '', 'default': 0, 'newstate': u'reopened', 'label': u'reopen', 'oldstates': [u'closed'], u'permissions': [u'TICKET_CREATE']}, u'create_and_assign': {u'operations': [u'may_set_owner'], 'name': '', 'default': 0, 'newstate': u'assigned', u'label': u'assign', 'oldstates': [None], u'permissions': [u'TICKET_MODIFY']}, u'reassign': {u'operations': [u'set_owner'], 'name': '', 'default': 0, 'newstate': u'assigned', 'label': u'reassign', 'oldstates': [u'new', u'assigned', u'accepted', u'reopened'], u'permissions': [u'TICKET_MODIFY']}, '_reset': {'operations': ['reset_workflow'], 'default': 0, 'newstate': 'new', 'label': 'Reset', 'oldstates': [], 'permissions': ['TICKET_ADMIN']}})
 
 DEBUG:trac.test:action controllers for ticket workflow: ['ConfigurableTicketWorkflow']
-INFO:trac.test:New attachment: wiki:attachments: template.2.docx by None
-DEBUG:root:dir(attachment)['__class__', '__delattr__', '__dict__', '__doc__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_create_unique_file', '_extension_re', '_fetch', '_from_database', '_get_hashed_filename', '_get_path', '_is_valid_path', '_move', 'author', 'date', 'delete', 'delete_all', 'description', 'env', 'filename', 'insert', 'move', 'open', 'parent_id', 'parent_realm', 'path', 'realm', 'reparent', 'reparent_all', 'resource', 'select', 'size', 'title']
-DEBUG:root:os.getcwd(): /home/ozgur/my-trac/my-plugins/wiki2doc_plugin
+INFO:trac.test:New attachment: wiki:attachments: template.docx by None
+INFO:trac.test:New attachment: wiki:helloworld: Image1.jpg by None
+INFO:trac.test:New attachment: wiki:helloworld: Image2.jpg by None

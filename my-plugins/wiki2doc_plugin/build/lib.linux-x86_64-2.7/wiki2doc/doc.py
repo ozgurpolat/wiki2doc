@@ -5,7 +5,6 @@ import os
 import tempfile
 from docx import Document
 from docx.enum.table import WD_TABLE_ALIGNMENT
-
 from docx.text.paragraph import Paragraph
 from docx.oxml.xmlchemy import OxmlElement
 #from trac.mimeview import Context
