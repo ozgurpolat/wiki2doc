@@ -1,4 +1,4 @@
-# wiki2doc
+# Wiki2doc Plug-in
 
 Wiki2doc is a plug-in written for Trac. It reads a wiki page created inside Trac environment and inserts the content of [Trac](https://trac.edgewall.org/) wikipage into a docx file, including text, tables, hyperlinks and images.
 
