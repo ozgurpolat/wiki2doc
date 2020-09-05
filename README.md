@@ -1,6 +1,6 @@
 # [Wiki2doc Plug-in](https://github.com/ozgurpolat/wiki2doc/tree/master/my-plugins/wiki2doc_plugin)
 
-[Wiki2doc](https://github.com/ozgurpolat/wiki2doc/tree/master/my-plugins/wiki2doc_plugin) is a plug-in written for [Trac project management and bug tracking system](https://en.wikipedia.org/wiki/Trac) using [Python programming language](https://www.python.org/), [git version control](https://en.wikipedia.org/wiki/Git), [Python Unittest](https://docs.python.org/2/library/unittest.html) and [Pylint](https://www.pylint.org/) code analysis system. It reads a wiki page created inside Trac environment and inserts the content of a [Trac](https://trac.edgewall.org/) wikipage into a docx file, including text, tables, hyperlinks and images. See the code below:
+[Wiki2doc](https://github.com/ozgurpolat/wiki2doc/tree/master/my-plugins/wiki2doc_plugin) is a plug-in written for [Trac project management and bug tracking system](https://en.wikipedia.org/wiki/Trac) and is created using [Python programming language](https://www.python.org/), [git version control](https://en.wikipedia.org/wiki/Git), [Python Unittest](https://docs.python.org/2/library/unittest.html) and [Pylint](https://www.pylint.org/) code analysis system. It reads a wiki page created inside Trac environment and inserts the content of a [Trac](https://trac.edgewall.org/) wikipage into a docx file, including text, tables, hyperlinks and images. See the code below:
 
 [Wiki2Doc plug-in code](https://github.com/ozgurpolat/wiki2doc/tree/master/my-plugins/wiki2doc_plugin)
 
