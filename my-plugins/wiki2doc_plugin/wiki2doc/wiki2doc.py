@@ -377,7 +377,6 @@ class Wiki2Doc(Component):
                  page_path))
         else:
             self.errorlog.append(
-                ("Page for the spec " +\
-                 "{} could not be found!".format(page.name),
+                ("Page {} could not be found!".format(page.name),
                  page_path))
     

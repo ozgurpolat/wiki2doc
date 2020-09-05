@@ -267,6 +267,22 @@ def filter_multi_regex(regx, regy, text):
 
     return text
 
+def check_for_relative_link(hypermatches):
+    """ This function checks for ../
+        and removes it. """
+
+    hyperlist = []
+    regex = re.compile(r'^\.\.\/(.*)')
+    for hyper in hypermatches:
+        if regex.match(hyper[1]):
+            hyper = list(hyper)
+            hyper[1] = str(regex.match(hyper[1]).group(1))
+            hyper = tuple(hyper)
+            hyperlist.append(hyper)
+        else:
+            hyperlist.append(hyper)
+    return hyperlist
+
 def find_hyperlinks(text):
     """ for a given text, this function finds multiple
         hyperlinks. There are three ways users can
