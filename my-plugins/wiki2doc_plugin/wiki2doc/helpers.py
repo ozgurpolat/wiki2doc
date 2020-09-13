@@ -99,13 +99,13 @@ def set_req_keys(req):
      
     return req_keys
 
-def get_tables_in_text(sections):
+def get_sections_with_tables(sections):
     """ given a list of sections, returns a list of sections
         with attached tables stored in a dictionary where key
         is the table name in the spec and value is the table data. """
 
     sections_with_tables = []
-    spec_tables = {}
+    page_tables = {}
     table_keys = []
     table_values = []
     key = 0
@@ -113,7 +113,7 @@ def get_tables_in_text(sections):
     for i in range(len(sections)):
         i_text = [i, sections[i][1]]
         if i_text[1] is not None:
-            for table_text in tables_in_spec_text(i_text):
+            for table_text in tables_in_page_text(i_text):
                 if table_text and len(table_text[0]) > 0:
                     key_string = 'Table_' + str(i+1) + str(key+1)
                     table_keys.append(key_string)
@@ -125,21 +125,21 @@ def get_tables_in_text(sections):
                     line = "".join(table_text[1])
                     text_without_tables.append(line)
         key = 0
-        spec_tables = dict(zip(table_keys, table_values))
+        page_tables = dict(zip(table_keys, table_values))
         text_without_tables = "\n".join(text_without_tables)
-        spec_images = sections[i][2]
+        page_images = sections[i][2]
         sections_with_tables.append([sections[i][0],
                                      text_without_tables,
-                                     spec_images,
-                                     spec_tables])
+                                     page_images,
+                                     page_tables])
         table_keys = []
         table_values = []
         text_without_tables = []
-        spec_tables = {}
+        page_tables = {}
 
     return sections_with_tables
 
-def tables_in_spec_text(i_text):
+def tables_in_page_text(i_text):
     """ generator to iterate through the tables in the text of a spec,
     extracting the tables as lists of lists, removing them and placing
     anchors in their place. returns extracted tables and the text without
@@ -152,20 +152,17 @@ def tables_in_spec_text(i_text):
     text_without_tables = []
     
     lines = i_text[1].splitlines()
-    print('lines', lines)
+
     for line in lines:
         match = regex.match(line)
         text_without_tables.append(line + '\n')
-        print('line, match, found:', line, match, found)
+
         if match:
             found = True
-            print('match line:', line)
-            print('1.found', found)
             columns = line.split("||")
             
             for i in range(len(columns)):
                 columns[i] = columns[i].strip()
-            print('columns', columns)
             
             columns = columns[1:-1] #Removing first and last ||
             # columns = [list(j) for i, j in groupby(columns)]
@@ -176,25 +173,19 @@ def tables_in_spec_text(i_text):
             for i, j in groupby(columns):
                 columnlist.append(list(j))
                 columnkeys.append(i)
-            print('columnlist', columnlist)
+
             table.append(columnlist)
             text_without_tables.pop()
         elif found:
-            print('found line:', line)
-            print('2.found', found)
+
             # Inserting [[Table(Table_ID.tbl)]] anchor
             # and removing the table from the text
             line_after = text_without_tables[-1]
-            
-            print('line_after', line_after)
-            print('text_without_tables', text_without_tables)
-            
             text_without_tables.pop()
             key_string = 'Table_' + str(i_text[0]+1) + str(key+1)
             line = '[[Table(' + key_string + '.tbl)]]\n'
             text_without_tables.append(line)
             #text_without_tables.append(line_after + '\n')
-            print('line_after', line_after)
             text_without_tables.append(line_after)
             yield (table, text_without_tables)
             found = False
@@ -213,14 +204,14 @@ def get_header_in_text_line(line):
     header = re.compile(r'\s*(=+)(\s*)(\.*)')
 
     match = header.match(line)
-    
-    print('get_header_in_text_line:')
-    print('match', match)
 
     if match:
         print('match.group(1)', match.group(1))
-
-    return line
+        length = len(match.group(1))
+        heading = 'Heading ' + str(length)
+        return line, heading
+    else:
+        return None, None
 
 def filter_wiki_text(text):
     """ for a given wiki text, this function filters
@@ -298,43 +289,38 @@ def find_hyperlinks(text):
     rest = ''
 
     regex_id, hypermatches = select_link_type(text)
-    #print('inside find_hyperlinks after -> regex_id, hypermatches = select_link_type(text)')
-    #print('regex_id:', regex_id)
-    #print('hypermatches:', hypermatches)
 
     if regex_id == 0 and len(hypermatches) > 0:
-        #print('1. find_hyperlinks(text):')
-        # matches [[link_path|link_name]]
+
         hyperlist = get_hyperlist_dbrk(hypermatches)
         regex = r'^(.*)\[\[(http\:|https\:|file\:|e\:\/wiki\/|e\:wiki\/|'+\
             r'\/wiki\/|wiki\:|attachment\:)(.*?)\]\](.*?)$'
 
     elif regex_id == 1 and len(hypermatches) > 0:
-        #print('2. find_hyperlinks(text):')
-        # matches [link_path link_name]
+
         hyperlist = hypermatches
         regex = r'^(.*)\[(http\:|https\:|file\:|e\:\/wiki\/|e\:wiki\/|' +\
             r'\/wiki\/|wiki\:|attachment\:)(.*?)\](.*?)$'
 
     elif regex_id == 2 and len(hypermatches) > 0:
-        #print('3. find_hyperlinks(text):')
+
         hyperlist = hypermatches
         regex = r"^(.*)(http\:|https\:|file\:|e\:\/wiki\/|e\:wiki\/|" +\
             r"\/wiki\/|wiki\:|attachment\:)(.*?)(?:\s*$|\s+)(.*?)$"
 
     elif regex_id == 3 and len(hypermatches) > 0:
-        #print('4. find_hyperlinks(text):')
+
         hyperlist = get_hyperlist_ticket(hypermatches)
         regex = r"^(.*)(r\:\#)(.*?)(?:\s*$|\s+)(.*?)$"
 
     elif regex_id == 4 and len(hypermatches) > 0:
-        #print('5. find_hyperlinks(text):')
+
         hypermatches = check_for_relative_link(hypermatches)
         hyperlist = get_hyperlist_dbrk(hypermatches)
         regex = r'^(.*)\[\[(.*?\/.*?)(.*?)\]\](.*?)$'
 
     if regex_id >= 0 and len(hypermatches) > 0:
-        #print('6. find_hyperlinks(text):')
+
         match_pattern = re.compile(regex)
         match = match_pattern.match(text)
         if match:
@@ -485,11 +471,16 @@ def table_font_size(table, size):
 
 def insert_image(paragraph, img_path):
     """ insert image """
-
+#     import PIL
+#     image = PIL.Image.open(img_path)
+#     width, height = image.size
+#     img_inches = width / dpi
+#     print("image_dims", width, height, img_inches)
+    
     if paragraph is not None:
         new = paragraph.insert_paragraph_before()
         run = new.add_run()
-        run.add_picture(img_path, width=Inches(6.3))
+        run.add_picture(img_path, width=Inches(5.3))
 
 def get_link_name(hyper):
     """ for a given hypermatch this function
@@ -625,34 +616,34 @@ def get_base_url(req):
         base_url = "http://" + str(match.group(1)) + "/"
         return base_url
     
-def get_wiki_specname(spec_name, hyper):
+def get_wiki_specname(page_name, hyper):
     """ returns the wiki page name for another
         page that is under same parent path.
         """
 
     given_path = remove_forward_slash(hyper[1]) + hyper[2]
     given_path_list = given_path.split("/")
-    spec_name_list = spec_name.split("/")
+    page_name_list = page_name.split("/")
 
     list_index = []
 
-    for i, item in enumerate(spec_name_list):
+    for i, item in enumerate(page_name_list):
         if item in set(given_path_list):
             list_index.append(i)
 
     if len(list_index) > 0:
-        spec_name_list = spec_name_list[:list_index[0]]
+        page_name_list = page_name_list[:list_index[0]]
     elif len(list_index) == 0:
-        spec_name_list = spec_name_list[:-1]
+        page_name_list = page_name_list[:-1]
 
-    mod_spec_name = ''
+    mod_page_name = ''
 
-    for item in spec_name_list:
-        mod_spec_name += item + "/"
+    for item in page_name_list:
+        mod_page_name += item + "/"
 
-    mod_spec_name = mod_spec_name + given_path
+    mod_page_name = mod_page_name + given_path
 
-    return mod_spec_name
+    return mod_page_name
 
 def remove_forward_slash(text):
     """ Removes forward slash from the text. """

@@ -16,7 +16,9 @@ from StringIO import StringIO
 import tempfile
 from mock import patch
 from trac.wiki.web_ui import DefaultWikiPolicy, WikiModule
-from wiki2doc.helpers import get_base_url, request_redirect
+from wiki2doc.helpers import get_base_url
+from wiki2doc.helpers import request_redirect
+from wiki2doc.helpers import get_sections_with_tables
 from trac.web.api import RequestDone
 import os
 from wiki2doc.helpers import check_for_relative_link
@@ -276,8 +278,8 @@ sanctus est Lorem ipsum dolor sit amet."""}
         # the test runs so we have to insert env.path into
         # image_path below.
 
-        spec_name = 'Specname1'
-        page = self.gr_api.get_wikipage(spec_name)
+        page_name = 'Specname1'
+        page = self.gr_api.get_wikipage(page_name)
 
         page_text = pages['Specname1']
 
@@ -430,7 +432,6 @@ sanctus est Lorem ipsum dolor sit amet."""}
                          errorlog,
                          "Errorlog does not match for page: {}".format(page2.name))
 
-        log.debug('self.gr_api.errorlog; {}'.format(self.gr_api.errorlog)) 
 
     def test_check_for_relative_link(self):
         """ Test check_for_relative_link """
@@ -538,52 +539,61 @@ sanctus est Lorem ipsum dolor sit amet."""}
         get_image_file """
 
         pages = {
-            'Specname1': """=Lorem ipsum dolor sit amet,
+            'Page1': """=Lorem ipsum dolor sit amet,
 consetetur sadipscing elitr, sed diam nonumy eirmod tempor
 [[Image(Image1.jpg)]]\ninvidunt ut labore et dolore magna 
-aliquyam erat, sed diam \n[[Image(Image2.jpg)])]\nvoluptua.""",
-            'Specname2': """=Lorem ipsum dolor sit amet,
+aliquyam erat, sed diam \n[[Image(Image2.jpg)]]\nvoluptua.""",
+            'Page2': """=Lorem ipsum dolor sit amet,
 [[Image(Image1.jpg)]]\nduo dolores et ea rebum. Stet clita 
 [[Image(Image2.jpg)]]\nkasd gubergren, no sea takimata 
 sanctus est Lorem ipsum dolor sit amet."""}
 
-        _insert_wiki_pages(self.gr_api.envs['event'], pages)
+        _insert_wiki_pages(self.gr_api.env, pages)
 
-        easy_specs = [
-            [2,
-             'Specname1',
-             'consetetur sadipscing elitr, sed diam nonumy eirmod tempor\n' +\
-             '[[Image(Image1.jpg)]]\ninvidunt ut labore et dolore magna \n' +\
-            'aliquyam erat, sed diam \n[[Image(Image2.jpg)]]\nvoluptua.\n'],
-            [3,
-             'Specname2',
-             '[[Image(Image1.jpg)]]\nduo dolores et ea rebum. Stet clita \n' +\
-             '[[Image(Image2.jpg)]]\nkasd gubergren, no sea takimata \n' +\
-             'sanctus est Lorem ipsum dolor sit amet.\n']]
+        env = self.gr_api.env
 
-        env = self.gr_api.envs['event']
-
-        req = MockRequest(self.gr_api.envs['task'])
+        req = MockRequest(self.gr_api.env, method='GET', args={})
 
         # use tempfile so as not to pollute the standard python2.7 area
         env.path = tempfile.mkdtemp(prefix='trac-tempenv-')
+        # As an example
+        # env.path = '/tmp/trac-tempenv-lIeyEP'
+        # the value after 'trac-tempenv-' which is 'lIeyEP'
+        # in this instance is generated randomly each time
+        # the test runs so we have to insert env.path into
+        # image_path below.
 
-        spec = 'Specname1'
-        page = WikiPage(self.gr_api.envs['event'], spec)
-        attachment = Attachment(page.env,
-                                page.realm,
-                                page.resource.id)
-        attachment.insert('Image1.jpg', StringIO(''), 0)
-        attachment.insert('Image2.jpg', StringIO(''), 0)
+        pagename1 = 'Page1'
+        page1 = WikiPage(env, pagename1)
+        attachment1 = Attachment(page1.env,
+                                page1.realm,
+                                page1.resource.id)
 
-        spec = 'Specname2'
-        page = WikiPage(self.gr_api.envs['event'], spec)
-        attachment = Attachment(page.env,
-                                page.realm,
-                                page.resource.id)
+        path1 = os.getcwd()
+        path1 = path1 + "/tests/resource/Image1.jpg"
+        img1=open(path1,"rb").read()
 
-        attachment.insert('Image1.jpg', StringIO(''), 0)
-        attachment.insert('Image2.jpg', StringIO(''), 0)
+        path2 = os.getcwd()
+        path2 = path2 + "/tests/resource/Image2.jpg"
+        img2=open(path2,"rb").read()    
+
+        # IMPORTANT: If you use "template.docx" instead of
+        #            "Image1.jpg" below, it inserts the
+        #            image inside "template.docx"
+        attachment1.insert("Image1.jpg", StringIO(img1), len(img1))
+        attachment1.insert("Image2.jpg", StringIO(img2), len(img2))
+
+        pagename2 = 'Page2'
+        page2 = WikiPage(env, pagename2)
+        attachment2 = Attachment(page2.env,
+                                page2.realm,
+                                page2.resource.id)
+
+        # IMPORTANT: If you use "template.docx" instead of
+        #            "Image1.jpg" below, it inserts the
+        #            image inside "template.docx"
+        attachment2.insert("Image1.jpg", StringIO(img1), len(img1))
+        attachment2.insert("Image2.jpg", StringIO(img2), len(img2))
 
         # As an example
         # env.path = '/tmp/trac-tempenv-lIeyEP'
@@ -591,38 +601,189 @@ sanctus est Lorem ipsum dolor sit amet."""}
         # in this instance is generated randomly each time
         # the test runs so we have to insert env.path into
         # image dictionary below.
-        easy_specs_with_img_attch = [
-            [2,
-             'Specname1',
-             'consetetur sadipscing elitr, sed diam nonumy eirmod tempor\n' +\
-             '[[Image(Image1.jpg)]]\n'+\
-             'invidunt ut labore et dolore magna \n' +\
-             'aliquyam erat, sed diam \n' +\
-             '[[Image(Image2.jpg)]]\nvoluptua.\n',
-             {'Image1.jpg': unicode(env.path, "utf-8")+\
-              u'/files/attachments/wiki/bdc/bdc726f49cd502d4306404b090a5' +\
-              'ddd13bb7dc0e/98c78c01ccdb21a78fd4f561e980ccd4d3a5a685.jpg',
-              'Image2.jpg': unicode(env.path, "utf-8") +\
-              u'/files/attachments/wiki/bdc/bdc726f49cd502d4306404b090a5' +\
-              'ddd13bb7dc0e/e8385af6dfec928ba93ae7b6ccdc2c5f2fcb89f8.jpg'}],
-            [3,
-             'Specname2',
-             '[[Image(Image1.jpg)]]\n' +\
-             'duo dolores et ea rebum. Stet clita \n' +\
-             '[[Image(Image2.jpg)]]\n' +\
-             'kasd gubergren, no sea takimata \n' +\
-             'sanctus est Lorem ipsum dolor sit amet.\n',
-             {'Image1.jpg': unicode(env.path, "utf-8") +\
-              u'/files/attachments/wiki/973/97308985c7cb5b1e1f121a0823a0' +\
-              'a33b380e8b11/98c78c01ccdb21a78fd4f561e980ccd4d3a5a685.jpg',
-              'Image2.jpg': unicode(env.path, "utf-8") +\
-              u'/files/attachments/wiki/973/97308985c7cb5b1e1f121a0823a0' +\
-              'a33b380e8b11/e8385af6dfec928ba93ae7b6ccdc2c5f2fcb89f8.jpg'}]]
+        filename1 = 'Image1.jpg'
+        returned_path1 = self.gr_api.get_image_file(filename1,
+                                                    page1,
+                                                    req)
+
+        returned_path1_split = returned_path1.split("/")
+
+        # Every time the test is executed, a random code is generated
+        # we are getting this code to construct expected path
+        random_code1 = returned_path1_split[2].split("-")
+
+        image_path1 = unicode(env.path, "utf-8")[0:-6] + \
+            random_code1[-1] + \
+            u'/files/attachments/wiki/3f0/' +\
+            u'3f076c5ef9351e9197b499926955d8d481454993/' +\
+            u'98c78c01ccdb21a78fd4f561e980ccd4d3a5a685.jpg'
+
+        filename2 = 'Image2.jpg'
+        returned_path2 = self.gr_api.get_image_file(filename2,
+                                                    page2,
+                                                    req)
+
+        returned_path2_split = returned_path2.split("/")
+
+        # Every time the test is executed, a random code is generated
+        # we are getting this code to construct expected path
+        random_code2 = returned_path2_split[2].split("-")
+
+        image_path2 = unicode(env.path, "utf-8")[0:-6] +\
+            random_code2[-1] + \
+            u'/files/attachments/wiki/3f0/' +\
+            u'3f076c5ef9351e9197b499926955d8d481454993/' +\
+            u'e8385af6dfec928ba93ae7b6ccdc2c5f2fcb89f8.jpg'
+
+        expected_page = [['Page1', u'=Lorem ipsum dolor sit amet,' +\
+                          u'\nconsetetur sadipscing elitr,' +\
+                          u' sed diam nonumy eirmod tempor\n' +\
+                          u'[[Image(Image1.jpg)]]\ninvidunt ut ' +\
+                          u'labore et dolore magna \naliquyam ' +\
+                          u'erat, sed diam \n[[Image(Image2.jpg)]]' +\
+                          u'\nvoluptua.\n\n',
+                          {u'Image1.jpg': image_path1, u'Image2.jpg': image_path2}]]
 
         self.assertEqual(
-            self.gr_api.get_sections_with_images(easy_specs, req),
-            easy_specs_with_img_attch,
+            self.gr_api.get_sections_with_images(page1, req),
+            expected_page,
             "Extracted spec sections with images do not match!")
+
+    def test_get_sections_with_tables(self):
+        """ Test get_sections_with_tables and
+        tables_in_spec_text """
+
+        pages = {
+            'Page1': """=Lorem ipsum dolor sit amet,
+consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+[[Image(Image1.jpg)]]\ninvidunt ut labore et dolore magna 
+aliquyam erat, sed diam \n[[Image(Image2.jpg)]]\nvoluptua.
+|| 1 || 2 || 3 ||
+|||| 1-2 || 3 ||
+|| 1 |||| 2-3 ||
+|||||| 1-2-3 ||
+=Lorem ipsum consetetur sadipscing elitr,""",
+            'Page2': """=Lorem ipsum dolor sit amet,
+|| 1 || 2 || 3 ||
+|||| 1-2 || 3 ||
+|| 1 |||| 2-3 ||
+|||||| 1-2-3 ||
+[[Image(Image1.jpg)]]\nduo dolores et ea rebum. Stet clita 
+[[Image(Image2.jpg)]]\nkasd gubergren, no sea takimata 
+sanctus est Lorem ipsum dolor sit amet.
+=Lorem ipsum consetetur sadipscing elitr,"""}
+
+        _insert_wiki_pages(self.gr_api.env, pages)
+
+        env = self.gr_api.env
+
+        req = MockRequest(self.gr_api.env, method='GET', args={})
+
+        # use tempfile so as not to pollute the standard python2.7 area
+        env.path = tempfile.mkdtemp(prefix='trac-tempenv-')
+        # As an example
+        # env.path = '/tmp/trac-tempenv-lIeyEP'
+        # the value after 'trac-tempenv-' which is 'lIeyEP'
+        # in this instance is generated randomly each time
+        # the test runs so we have to insert env.path into
+        # image_path below.
+
+        pagename1 = 'Page1'
+        page1 = WikiPage(env, pagename1)
+        attachment1 = Attachment(page1.env,
+                                page1.realm,
+                                page1.resource.id)
+
+        path1 = os.getcwd()
+        path1 = path1 + "/tests/resource/Image1.jpg"
+        img1=open(path1,"rb").read()
+
+        path2 = os.getcwd()
+        path2 = path2 + "/tests/resource/Image2.jpg"
+        img2=open(path2,"rb").read()    
+
+        # IMPORTANT: If you use "template.docx" instead of
+        #            "Image1.jpg" below, it inserts the
+        #            image inside "template.docx"
+        attachment1.insert("Image1.jpg", StringIO(img1), len(img1))
+        attachment1.insert("Image2.jpg", StringIO(img2), len(img2))
+
+        pagename2 = 'Page2'
+        page2 = WikiPage(env, pagename2)
+        attachment2 = Attachment(page2.env,
+                                page2.realm,
+                                page2.resource.id)
+
+        # IMPORTANT: If you use "template.docx" instead of
+        #            "Image1.jpg" below, it inserts the
+        #            image inside "template.docx"
+        attachment2.insert("Image1.jpg", StringIO(img1), len(img1))
+        attachment2.insert("Image2.jpg", StringIO(img2), len(img2))
+
+        # As an example
+        # env.path = '/tmp/trac-tempenv-lIeyEP'
+        # the value after 'trac-tempenv-' which is 'lIeyEP'
+        # in this instance is generated randomly each time
+        # the test runs so we have to insert env.path into
+        # image dictionary below.
+        filename1 = 'Image1.jpg'
+        returned_path1 = self.gr_api.get_image_file(filename1,
+                                                    page1,
+                                                    req)
+
+        returned_path1_split = returned_path1.split("/")
+
+        # Every time the test is executed, a random code is generated
+        # we are getting this code to construct expected path
+        random_code1 = returned_path1_split[2].split("-")
+
+        image_path1 = unicode(env.path, "utf-8")[0:-6] + \
+            random_code1[-1] + \
+            u'/files/attachments/wiki/b43/' +\
+            u'b43b4133f4d1cd7ff1628609fa507e853760133b/' +\
+            u'98c78c01ccdb21a78fd4f561e980ccd4d3a5a685.jpg'
+
+        filename2 = 'Image2.jpg'
+        returned_path2 = self.gr_api.get_image_file(filename2,
+                                                    page2,
+                                                    req)
+
+        returned_path2_split = returned_path2.split("/")
+
+        # Every time the test is executed, a random code is generated
+        # we are getting this code to construct expected path
+        random_code2 = returned_path2_split[2].split("-")
+
+        image_path2 = unicode(env.path, "utf-8")[0:-6] +\
+            random_code2[-1] + \
+            u'/files/attachments/wiki/b43/' +\
+            u'b43b4133f4d1cd7ff1628609fa507e853760133b/' +\
+            u'e8385af6dfec928ba93ae7b6ccdc2c5f2fcb89f8.jpg'
+
+        sections = self.gr_api.get_sections_with_images(page2, req)
+        log.debug('sections: {}'.format(sections))
+        
+        returned_sections = get_sections_with_tables(sections)
+
+        expected_sections = [['Page2',
+          u'=Lorem ipsum dolor sit amet,\n[[Table(Table_11.tbl)]]\n' +\
+          u'[[Image(Image1.jpg)]]\n\nduo dolores et ea rebum. Stet ' +\
+          u'clita \n[[Image(Image2.jpg)]]\nkasd gubergren, no sea ' +\
+          u'takimata \nsanctus est Lorem ipsum dolor sit amet.\n' +\
+          u'=Lorem ipsum consetetur sadipscing elitr,\n\n',
+          {u'Image1.jpg': image_path1, u'Image2.jpg': image_path2},
+          {'Table_11': [[[u'1'], [u'2'], [u'3']],
+                        [[u''], [u'1-2'], [u'3']], 
+                        [[u'1'], [u''], [u'2-3']],
+                        [[u'', u''], [u'1-2-3']]]}]]
+        
+        log.debug('sections: {}'.format(returned_sections))
+        log.debug('sections: {}'.format(expected_sections))
+
+        self.assertEqual(
+            returned_sections,
+            expected_sections,
+            "Extracted spec sections with tables do not match!")
 
 if __name__ == '__main__':
     unittest.main()

@@ -58,7 +58,6 @@ class Doc(object): # pylint: disable=too-many-public-methods
             the introduction section in the document."""
  
         paragraph = self.get_paragraph_after_regex(r"")
-        print('inside add_document after paragraph = self.get OK SO FAR!')
  
         self.insert_section(paragraph, sections, 3)
 
@@ -86,18 +85,16 @@ class Doc(object): # pylint: disable=too-many-public-methods
             inserts section text, if found images and
             if found tables."""
  
-        spec_images = {}
-        print('inside_section -> sections', sections)
+        page_images = {}
+
         for i in range(len(sections)):
-            print('inser_section -> TEXT:', i, sections[i][1])
+
             text = sections[i][1]
-            print(text)
-            spec_images.update(sections[i][2])
+            page_images.update(sections[i][2])
             style_key = 'Heading '+ str(level)
             #paragraph.insert_paragraph_before(apo_spec, style=style_key)
             if text is not None:
-                params = [i, paragraph, sections, text, spec_images]
-                print('Inside insert_section params=', params)
+                params = [i, paragraph, sections, text, page_images]
                 self.find_sections(params)
 
     def find_sections(self, params):
@@ -108,14 +105,14 @@ class Doc(object): # pylint: disable=too-many-public-methods
                       paragraph,
                       sections,
                       text,
-                      spec_images]"""
+                      page_images]"""
         img_filename = None
         img_path = None
         wiki_filter = \
             [
              re.compile(r'\s*\[\[Image\((.*(\.jpg|\.png|\.gif))\)\]\]\s*'),
              re.compile(r'\s*\[\[Table\((.*)\.tbl\)\]\]\s*'),
-             re.compile(r'\s*(=+)(.*)'),
+             re.compile(r'\s*(=+)(.+?)(=+)'),
              re.compile(r'\s*\[\s*=\#Table(\d+)\s*\]\s*'),
              re.compile(r'\s*\[\s*=\#Fig(\d+)\s*\]\s*'),
              re.compile(r'\s*\*\s*(.*)')]
@@ -124,8 +121,7 @@ class Doc(object): # pylint: disable=too-many-public-methods
 #         section = re.compile(r'\s*(=+)\s*(\d+\.){1,}\d*(.*)')
 #         tbl = re.compile(r'\s*\[\s*=\#Table(\d+)\s*\]\s*')
 #         fig = re.compile(r'\s*\[\s*=\#Fig(\d+)\s*\]\s*')
-        print('find_sections:')
-        print('find_sections -> TEXT:', params[3])
+
         for line in params[3].splitlines():
             line = to_unicode(line)
 #             img_match = wiki_filter[0].match(line)
@@ -137,53 +133,32 @@ class Doc(object): # pylint: disable=too-many-public-methods
             get_header_in_text_line(line)
              
             if wiki_filter[0].match(line):
-                print('wiki_filter[0]')
+
                 img_filename = to_unicode(wiki_filter[0].match(line).group(1))
-                print(img_filename)
-                
                 img_filename_list = img_filename.split(':')
                 
                 # Handiling image from another page [[Image(wiki:Another_page:hello_world.jpg)]]
                 if len(img_filename_list) == 3:
-                    print('len(img_filename_list)', len(img_filename_list), img_filename_list[-1])
+
                     img_filename = img_filename_list[-1]
                 
                 for key, value in params[4].iteritems():
-                    
-                    print('key, value:', key, value)
+
                     if key == img_filename:
                         img_path = value
-                        print('img_path:', img_path)
                         # if you want to include the image name
                         # insert the code below
                         # params[1].insert_paragraph_before(line)
                         insert_image(params[1], img_path)
             elif wiki_filter[1].match(line):
-                print('wiki_filter[1]')
                 self.get_table(params,
                                to_unicode(wiki_filter[1].match(line).group(1)))
             elif wiki_filter[2].match(line):
-                print('wiki_filter[2]')
-                 
-                #line = get_header_in_text_line(line)
-                print('wiki_filter[2].match(line).group(1)', wiki_filter[2].match(line).group(1))
-                print('wiki_filter[2].match(line).group(2)', wiki_filter[2].match(line).group(2))
+                print('heading found', wiki_filter[2].match(line).group(1), wiki_filter[2].match(line).group(2).strip())
                 style_key = 'Heading' +\
                             ' ' + \
                             str(len(wiki_filter[2].match(line).group(1)))
- 
-                print('WHY!')
-                print(dir(params[1]),'\n')
-                print('\n')
-                print(dir(params[1]._p), '\n')
-                print('\n')
-                print(dir(params[1]._p.add_p_before), '\n')
-                print('\n')
-                print(dir(params[1]._insert_paragraph_before), '\n')
-                print('\n')
-                print(dir(params[1]._p.add_p_before()))
-                print('\n')
-                 
+                
                 params[1].insert_paragraph_before(\
                     to_unicode(wiki_filter[2].match(line).group(2).strip()),
                     style=style_key)
@@ -195,27 +170,24 @@ class Doc(object): # pylint: disable=too-many-public-methods
 #                     p = new._p
 #                     p.addnext(new._p)
                      
- 
-                if params[1] is not None:
-                    new = params[1].insert_paragraph_before(to_unicode(wiki_filter[2].match(line).group(2).strip()), style=style_key)
-                    #new.text = 'test'
-                    run = new.add_run('test')
-                    run.font.subscript = True
-                    p = new._p
-                    p.addnext(new._p)                    
+                # IMPORTANT temoprarily commented out was in on 9.12.2020
+#                 if params[1] is not None:
+#                     new = params[1].insert_paragraph_before(to_unicode(wiki_filter[2].match(line).group(2).strip()), style=style_key)
+#                     #new.text = 'test'
+#                     run = new.add_run('test')
+#                     run.font.subscript = True
+#                     p = new._p
+#                     p.addnext(new._p)                    
                  
             elif wiki_filter[3].match(line):
-                print('wiki_filter[3]')
                 line = 'Table' + ' ' + str(wiki_filter[3].match(line).group(1))
                 line = to_unicode(line)
                 params[1].insert_paragraph_before(line, style='Caption')
             elif wiki_filter[4].match(line):
-                print('wiki_filter[4]')
                 line = 'Figure' + ' ' + str(wiki_filter[4].match(line).group(1))
                 line = to_unicode(line)
                 params[1].insert_paragraph_before(line, style='Caption')
             elif wiki_filter[5].match(line):
-                print('wiki_filter[5]')
                 line = str(wiki_filter[5].match(line).group(1))
                 line = to_unicode(line)
                 paragraph = create_list(\
@@ -226,20 +198,15 @@ class Doc(object): # pylint: disable=too-many-public-methods
                         paragraph,
                         line,
                         params[2][params[0]][0]]
-                # spec_name -> params[2][params[0]][0] = sections[0]
+                # page_name -> params[2][params[0]][0] = sections[0]
                 self.filter_hyperlinks(args)
             else:
-                #print('7')
-                #print('line:', line)
-                #print('params[2][params[0]][0]:', params[2][params[0]][0])
-                #print('params[2][params[0]][1]:', params[2][params[0]][1])
-                 
                 line = filter_wiki_text(line)
                 args = [None,
                         params[1].insert_paragraph_before(),
                         line,
                         params[2][params[0]][0]]
-                # spec_name -> params[2][params[0]][0] = sections[0]
+                # page_name -> params[2][params[0]][0] = sections[0]
                 self.filter_hyperlinks(args)
 
     def filter_hyperlinks(self, args):
@@ -249,13 +216,11 @@ class Doc(object): # pylint: disable=too-many-public-methods
             args = [table,
                     paragraph,
                     text,
-                    spec_name]"""
+                    page_name]"""
    
         #context = Context.from_request(self.req, 'wiki')
         context = web_context(self.req, 'wiki')
-        #print('inside filter_hyperlinks -> everthing is ok so far before -> regex_id, hypermatches = find_hyperlinks(args[2])')
         regex_id, hypermatches = find_hyperlinks(args[2])
-        #print('regex_id, hypermatches = find_hyperlinks(args[2])', regex_id, hypermatches)
         hyperlink = ''
         if len(hypermatches) > 0:
                 link_name = ''
@@ -287,15 +252,9 @@ class Doc(object): # pylint: disable=too-many-public-methods
                 wiki = process_blockquote(check_string(rest))
                 self.parse_html(args, context, wiki)
         else:
-            #print('inside filter_hyperlinks(self, args): after else:')
-            #print('args[2]', args[2])
             wiki = process_blockquote(check_string(args[2]))
-            #print('wiki', wiki)
-            #print('args', args)
             self.parse_html(args, context, wiki)
-            #print('fine so far after self.parse_html(args, context, wiki) in inside filter_hyperlinks(self, args): after else:')
-            #args[2].rows[args[0]].cells[args[1]].text = \
-            #        unicode(args[3], "utf-8")
+
         return (args[0], hypermatches)
 
     def parse_html(self, args, context, wiki):
@@ -303,15 +262,13 @@ class Doc(object): # pylint: disable=too-many-public-methods
         args[1] = paragraph,
         context,
         wiki,
-        args[3] = spec_name"""
+        args[3] = page_name"""
    
         try:
             html_code = HtmlFormatter(self.env,
                                       context,
                                       wiki).generate()
-            #print('inside parse_html before DocumentHTMLParser')
             DocumentHTMLParser(self.document, args[1], html_code)
-            #print('inside parse_html after DocumentHTMLParser')
             return html_code
         except AttributeError:
             self.wiki2doc.errorlog.append(
@@ -339,7 +296,7 @@ class Doc(object): # pylint: disable=too-many-public-methods
             insert_table method.
             example_sections = [
             [2,
-             'Specname1',
+             'Page1',
              'consetetur sadipscing elitr, sed diam nonumy eirmod tempor\n' +\
              '[[Image(Image1.jpg)]]\n' +\
              'invidunt ut labore et dolore magna \n' +\
@@ -360,23 +317,18 @@ class Doc(object): # pylint: disable=too-many-public-methods
                       paragraph,
                       sections,
                       text,
-                      spec_images]"""
+                      page_images]"""
    
         if params[2][params[0]][3]:
             for value in params[2][params[0]][3]:
                 if value == match_group:
                     table_data = params[2][params[0]][3][value]
-                     
-                    print('params[1]:', params[1])
-                    print('table_data:', table_data)
-                    print('params[2][params[0]][0]:', params[2][params[0]][0])
-                    print('params[2][params[0]][1]:', params[2][params[0]][1])
-                        
+
                     self.insert_table(params[1],
                                       table_data,
                                       params[2][params[0]][0])
 
-    def insert_table(self, paragraph, table_data, spec_name):
+    def insert_table(self, paragraph, table_data, page_name):
         """ insert table """
    
         # ************************************* IMPORTANT *******
@@ -394,7 +346,7 @@ class Doc(object): # pylint: disable=too-many-public-methods
         TracGuide The Trac User and Administration Guide        
         '''
    
-        table = self.append_table(table_data, spec_name)
+        table = self.append_table(table_data, page_name)
         table.style = 'Table Grid'
    
         if paragraph is not None:
@@ -405,7 +357,7 @@ class Doc(object): # pylint: disable=too-many-public-methods
             # end of the document
             new._p.addnext(table._tbl) # pylint: disable=protected-access
 
-    def append_table(self, data, spec_name):
+    def append_table(self, data, page_name):
         """ for a given table data, this function analyzes the table,
             looks for cells to be merged inside the text as described
             below. Creates the table with the values first, then calls
@@ -439,7 +391,7 @@ class Doc(object): # pylint: disable=too-many-public-methods
         args = [data,
                 table,
                 col_size,
-                spec_name]
+                page_name]
         table, merge_list = self.find_merged_cells(args)
    
         if len(data) == len(merge_list):
@@ -458,10 +410,8 @@ class Doc(object): # pylint: disable=too-many-public-methods
             args = [data,
                     table,
                     col_size,
-                    spec_name]"""
-         
-        print('inside find_merged_cells args:', args)            
-         
+                    page_name]"""    
+
         merge_list = []
         table_row_length = set()
         for idr, row in enumerate(args[0]):
@@ -476,8 +426,6 @@ class Doc(object): # pylint: disable=too-many-public-methods
                       row_length,
                       args[1],
                       args[3]]
-             
-            print('inside find_merged_cells params:', params)     
              
             args[1], table_row_length, merge_row = self.get_merge_row(params)
    
@@ -505,23 +453,21 @@ class Doc(object): # pylint: disable=too-many-public-methods
              the data and finds merged cells.
              params = [idr, row, table_row_length,
                        col_size, row_length, table,
-                       spec_name]"""
+                       page_name]"""
    
          merge_row = []
          col = 0
          pos = 0
          start = 0
          end = 0
-   
-         print('inside get_merge_row params:', params)  
-   
+
          for idx, item in enumerate(params[1]):
              for idy, value in enumerate(item):
                  if check_table_row_length(params[3],
                                            params[4]):
                      value = filter_wiki_text(value)
                      #args = [table, paragraph,
-                     #        text, task_id, spec_name]
+                     #        text, task_id, page_name]
                      args = [params[5],
                              params[5].rows[params[0]].cells[col].paragraphs[0],
                              value,
@@ -545,153 +491,112 @@ class Doc(object): # pylint: disable=too-many-public-methods
    
          return (params[5], params[2], merge_row)
 
-    def get_hyperlink(self, spec_name, regex_id, hyper):
+    def get_hyperlink(self, page_name, regex_id, hyper):
         """ for a given hypermatch this function
             returns the hyperlink and the link name."""
    
         link_name = get_link_name(hyper)
-        hyperlink = self.get_link_path(spec_name, regex_id, hyper)
+        hyperlink = self.get_link_path(page_name, regex_id, hyper)
    
         return (hyperlink, link_name)
 
-    def get_link_path(self, spec_name, regex_id, hyper):
+    def get_link_path(self, page_name, regex_id, hyper):
         """ for a given hypermatch this function
             returns the hyperlink path."""
    
         hyperlink = ''
    
         if regex_id == 4:
-            another_child_spec_name = get_wiki_specname(spec_name, hyper)
+            another_child_page_name = get_wiki_specname(page_name, hyper)
             page = \
                 self.wiki2doc.get_wikipage(
-                    remove_forward_slash(another_child_spec_name))
+                    remove_forward_slash(another_child_page_name))
             if not page:
-                self.errorlog_missing_page(another_child_spec_name,
-                                           spec_name)
-            hyperlink = self.get_wiki_hyperlink(spec_name, hyper)
+                self.errorlog_missing_page(another_child_page_name,
+                                           page_name)
+            hyperlink = self.get_wiki_hyperlink(page_name, hyper)
         elif hyper[1] == '/wiki/':
             page = self.wiki2doc.get_wikipage(hyper[2])
             if not page:
-                self.errorlog_missing_page(hyper[2], spec_name)
+                self.errorlog_missing_page(hyper[2], page_name)
             hyperlink = get_base_url(self.req) +\
                 remove_forward_slash(hyper[1]) +\
                 hyper[2]
         elif hyper[1] == 'e:/wiki/':
             page = self.wiki2doc.get_wikipage(hyper[2])
             if not page:
-                self.errorlog_missing_page(hyper[2], spec_name)
+                self.errorlog_missing_page(hyper[2], page_name)
             hyperlink = get_base_url(self.req) +\
             'wiki/' + hyper[2]
         elif hyper[1] == 'wiki:':
             page = \
                 self.wiki2doc.get_wikipage(remove_forward_slash(hyper[2]))
             if not page:
-                self.errorlog_missing_page(hyper[2], spec_name)
+                self.errorlog_missing_page(hyper[2], page_name)
             hyperlink = get_base_url(self.req) +\
                 'wiki/' + hyper[2]
         else:
             hyperlink = hyper[1] + hyper[2]
    
         return hyperlink
-#   
-#     def errorlog_missing_page(self, missing_spec, in_spec):
-#         """ Errorlog a wiki page that
-#             does not exist. """
-#         missing_spec = remove_forward_slash(missing_spec)
-#         self.wiki2doc.errorlog.append(\
-#             ("Specified link does not exist. Please check the " +\
-#              "full path and the name of the following link:'{}']".format(\
-#                                                            missing_spec),
-#              get_base_url(self.req) + 'wiki/' + in_spec))
-#   
-#     def get_wiki_hyperlink(self, spec_name, hyper):
-#         """ returns the wiki page hyperlink path for
-#             another page that is under same parent
-#             path. See regex_id 4. in find_hyperlinks.
-#   
-#             Example wikipage: http://10.45.43.145:8000/Coconut/
-#             event/wiki/APO/IP006/Dummy-APO-Database/IP006-APO-Spec-Sill
-#   
-#             Example reference from inside the link above.
-#             [[Dummy-APO-Database/GPD/Material_Strength| MS-GPD]]
-#             [[Dummy-APO-Database/GPD/Metallic_Joint| MBJ-GPD]]
-#             [[/GPD/Material_Strength| MS-GPD]]
-#             [[GPD/Material_Strength| MS-GPD]]
-#             [[/IP006/Dummy-APO-Database/GPD/Material_Strength| MS-GPD]]
-#             [[IP006/Dummy-APO-Database/GPD/Material_Strength| MS-GPD]]
-#             [[IP006/Dummy-APO-Database/GPD/Material_Strength]]
-#   
-#             This works because both "IP006-APO-Spec-Sill" and
-#             "GPD/Material_Strength" are under:
-#   
-#             http://10.45.43.145:8000/Coconut/
-#             event/wiki/APO/IP006/Dummy-APO-Database/
-#             """
-#   
-#         given_path = remove_forward_slash(hyper[1]) + hyper[2]
-#         given_path_list = given_path.split("/")
-#         full_wiki_path = get_base_url(self.req) +\
-#             "wiki/" + spec_name
-#         full_path_list = full_wiki_path.split("/")
-#         protocol = full_path_list[0]
-#         full_path_list = full_path_list[2:]
-#         list_index = []
-#         hyperlink = ''
-#   
-#         for i, item in enumerate(full_path_list):
-#             if item in set(given_path_list):
-#                 list_index.append(i)
-#   
-#         if len(list_index) > 0:
-#             full_path_list = full_path_list[:list_index[0]]
-#         elif len(list_index) == 0:
-#             full_path_list = full_path_list[:-1]
-#   
-#         mod_full_path = ''
-#   
-#         for item in full_path_list:
-#             mod_full_path += item + "/"
-#   
-#         hyperlink = protocol + "//" + mod_full_path + given_path
-#   
-#         return hyperlink
-#   
-#     def insert_analysed_apos_table(self, paragraph, sections):
-#         """ Given paragraph location and sections data,
-#             creates a table that contains analysed
-#             apo information."""
-#   
-#         col_names = ('ITEM', 'ANALYSE APO TASK No', 'APO TASK NAME', 'REMARK')
-#   
-#         table = self.document.add_table(rows=1, cols=4)
-#         table.alignment = WD_TABLE_ALIGNMENT.CENTER # pylint: disable=no-member
-#         table.style = 'Table Grid'
-#   
-#         for idx, name in enumerate(col_names):
-#             prg = table.rows[0].cells[idx].paragraphs[0]
-#             run = prg.add_run(name)
-#             run.font.name = 'Arial Black'
-#             run.bold = True
-#             run.italic = True
-#   
-#         for idx in range(len(sections)):
-#             table.add_row()
-#             prg = table.rows[idx+1].cells[0].paragraphs[0]
-#             run = prg.add_run(str(idx+1))
-#             run.bold = True
-#             for idy, cell in enumerate(table.rows[idx+1].cells):
-#                 if idy == 1:
-#                     cell.paragraphs[0].add_run(str(sections[idx][0]))
-#                 elif idy == 2:
-#                     cell.paragraphs[0].add_run(str(sections[idx][1]))
-#   
-#         table = table_font_size(table, 8)
-#   
-#         if paragraph is not None:
-#             new = paragraph.insert_paragraph_before()
-#             # _p and _tbl are protected and therefore not documented,
-#             # but otherwise it is impossible to insert a table,
-#             # and it would only be possible to append it to the
-#             # end of the document
-#             new._p.addnext(table._tbl) # pylint: disable=protected-access
+   
+    def errorlog_missing_page(self, missing_spec, in_spec):
+        """ Errorlog a wiki page that
+            does not exist. """
+        missing_spec = remove_forward_slash(missing_spec)
+        self.wiki2doc.errorlog.append(\
+            ("Specified link does not exist. Please check the " +\
+             "full path and the name of the following link:'{}']".format(\
+                                                           missing_spec),
+             get_base_url(self.req) + 'wiki/' + in_spec))
+   
+    def get_wiki_hyperlink(self, page_name, hyper):
+        """ returns the wiki page hyperlink path for
+            another page that is under same parent
+            path. See regex_id 4. in find_hyperlinks.
+   
+            Example wikipage: http://example.org/wiki/AA/IDX001/Dummy-AA-Database/IDX001-AA-Page-ID
+   
+            Example reference from inside the link above.
+            [[Dummy-AA-Database/GDL/Downloads| MS-GDL]]
+            [[Dummy-AA-Database/GDL/Desktop| MBJ-GDL]]
+            [[/GDL/Downloads| MS-GDL]]
+            [[GDL/Downloads| MS-GDL]]
+            [[/IDX001/Dummy-AA-Database/GDL/Downloads| MS-GDL]]
+            [[IDX001/Dummy-AA-Database/GDL/Downloads| MS-GDL]]
+            [[IDX001/Dummy-AA-Database/GDL/Downloads]]
+   
+            This works because both "IDX001-AA-Page-ID" and
+            "GDL/Downloads" are under:
+   
+            http://example.org/wiki/AA/IDX001/Dummy-AA-Database/
+            """
+   
+        given_path = remove_forward_slash(hyper[1]) + hyper[2]
+        given_path_list = given_path.split("/")
+        full_wiki_path = get_base_url(self.req) +\
+            "wiki/" + page_name
+        full_path_list = full_wiki_path.split("/")
+        protocol = full_path_list[0]
+        full_path_list = full_path_list[2:]
+        list_index = []
+        hyperlink = ''
+   
+        for i, item in enumerate(full_path_list):
+            if item in set(given_path_list):
+                list_index.append(i)
+   
+        if len(list_index) > 0:
+            full_path_list = full_path_list[:list_index[0]]
+        elif len(list_index) == 0:
+            full_path_list = full_path_list[:-1]
+   
+        mod_full_path = ''
+   
+        for item in full_path_list:
+            mod_full_path += item + "/"
+   
+        hyperlink = protocol + "//" + mod_full_path + given_path
+   
+        return hyperlink
 

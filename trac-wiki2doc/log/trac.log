@@ -3918,3 +3918,1213 @@ AttributeError: headers_sent
 2020-09-05 21:44:57,038 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
 2020-09-05 21:44:57,474 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
 2020-09-05 21:44:57,481 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-06 15:19:14,606 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-06 15:19:15,258 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-06 15:19:15,841 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-06 15:19:15,843 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/'
+2020-09-06 15:19:24,223 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-06 15:19:24,441 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-06 15:19:24,442 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-06 15:19:32,938 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-06 15:19:32,939 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-06 15:28:48,891 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-06 15:28:49,597 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-06 15:28:49,623 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-06 15:28:49,878 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-06 15:28:49,879 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-06 15:28:52,266 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-06 15:28:52,267 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-06 15:29:24,305 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-06 15:29:24,940 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-06 15:29:25,490 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-06 15:29:25,491 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/'
+2020-09-06 15:29:29,919 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-06 15:29:30,201 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-06 15:29:30,201 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-06 15:34:39,780 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-06 15:34:40,358 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-06 15:34:40,381 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-06 15:34:40,574 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-06 15:34:40,575 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-06 15:39:25,274 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-06 15:39:26,097 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-06 15:39:26,157 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-06 15:39:26,471 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-06 15:39:26,471 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-06 15:40:19,921 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-06 15:40:20,537 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-06 15:40:20,558 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-06 15:40:20,760 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-06 15:40:20,760 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-06 15:42:12,051 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-06 15:42:12,725 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-06 15:42:12,753 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-06 15:42:12,976 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-06 15:42:12,977 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-07 00:04:23,024 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 00:04:23,025 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/'
+2020-09-07 00:04:38,176 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (No handler matched request to /helloworld), <RequestWithSession "GET '/helloworld'">, referrer None
+2020-09-07 00:04:38,258 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 00:04:38,259 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/helloworld'
+2020-09-07 00:04:48,192 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 00:04:48,194 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/helloworld'
+2020-09-07 00:05:19,866 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 00:05:19,866 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/helloworld'
+2020-09-07 00:05:26,510 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 00:05:26,511 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/helloworld?action=edit'
+2020-09-07 00:05:59,538 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 00:05:59,538 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/helloworld'
+2020-09-07 00:06:07,024 Trac[session] INFO: Refreshing session admin
+2020-09-07 00:06:07,213 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 00:06:07,214 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/helloworld'
+2020-09-07 00:06:13,860 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 00:06:13,861 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/helloworld?action=edit'
+2020-09-07 00:07:20,862 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 00:07:20,864 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/helloworld'
+2020-09-07 11:39:40,649 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 11:39:40,649 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/helloworld?action=edit'
+2020-09-07 11:53:57,806 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 11:53:57,807 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/helloworld'
+2020-09-07 11:54:00,104 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 11:54:00,104 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 11:55:05,043 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 11:55:05,044 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics?action=edit'
+2020-09-07 12:11:25,418 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 12:11:25,440 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 12:11:52,125 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 12:11:52,126 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 12:14:08,105 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 12:14:08,106 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics?action=edit'
+2020-09-07 12:16:19,817 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 12:16:19,823 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 12:20:23,551 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 12:20:23,554 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 12:21:08,199 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 12:21:08,199 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 12:22:49,614 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 12:22:49,621 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 12:23:22,134 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 12:23:22,138 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 12:24:08,114 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 12:24:08,115 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 12:25:44,188 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 12:25:44,192 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 12:26:33,939 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 12:26:33,943 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 12:26:50,084 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 12:26:50,085 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 12:27:12,661 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 12:27:12,668 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 12:27:25,457 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 12:27:25,463 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 12:28:44,036 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 12:28:44,037 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 12:29:22,179 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 12:29:22,180 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-07 12:29:33,256 Trac[main] ERROR: [127.0.0.1] Internal Server Error: <RequestWithSession "POST '/wiki2doc'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+Traceback (most recent call last):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 639, in dispatch_request
+    dispatcher.dispatch(req)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 250, in dispatch
+    resp = chosen_handler.process_request(req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 140, in process_request
+    errorlog, content = self.process_document(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 229, in process_document
+    document.add_document(sections)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 62, in add_document
+    self.insert_section(paragraph, sections, 3)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 98, in insert_section
+    self.find_sections(params)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 210, in find_sections
+    self.filter_hyperlinks(args)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 256, in filter_hyperlinks
+    self.parse_html(args, context, wiki)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 271, in parse_html
+    DocumentHTMLParser(self.document, args[1], html_code)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/parser.py", line 10, in __init__
+    self.feed(html_code)
+  File "/usr/lib/python2.7/HTMLParser.py", line 117, in feed
+    self.goahead(0)
+  File "/usr/lib/python2.7/HTMLParser.py", line 206, in goahead
+    self.handle_entityref(name)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/parser.py", line 44, in handle_entityref
+    code_point = unichr(name2codepoint[name])
+NameError: global name 'name2codepoint' is not defined
+2020-09-07 12:29:33,419 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 12:29:33,420 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-07 12:38:28,159 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 12:38:28,159 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/attachment/wiki/metrics/?action=new'
+2020-09-07 12:38:58,415 Trac[attachment] INFO: New attachment: wiki:metrics: Precisionrecall.svg by admin
+2020-09-07 12:38:58,635 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 12:38:58,636 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/attachment/wiki/metrics/'
+2020-09-07 12:40:47,194 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 12:40:47,195 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics?action=edit'
+2020-09-07 12:41:15,801 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 12:41:15,805 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 12:41:21,952 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 12:41:21,952 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/attachment/wiki/metrics/Precisionrecall.svg'
+2020-09-07 12:42:24,325 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 12:42:24,329 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 12:52:23,628 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 12:52:23,629 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki'
+2020-09-07 12:52:31,109 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 12:52:31,109 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/TracInterfaceCustomization'
+2020-09-07 12:52:49,603 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 12:52:49,604 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/TracInterfaceCustomization'
+2020-09-07 12:53:53,277 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 12:53:53,284 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 12:55:42,147 Trac[main] WARNING: [127.0.0.1] HTTPForbidden: 403 Forbidden (WIKI_MODIFY privileges are required to perform this operation on TracInterfaceCustomization. You don't have the required permissions.), <RequestWithSession "GET '/wiki/TracInterfaceCustomization?action=edit'">, referrer None
+2020-09-07 12:55:42,221 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 12:55:42,221 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/TracInterfaceCustomization?action=edit'
+2020-09-07 12:57:11,355 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 12:57:11,356 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics?action=edit'
+2020-09-07 12:59:22,864 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 12:59:22,873 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 13:02:12,430 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 13:02:12,430 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/attachment/wiki/metrics/Precisionrecall.svg'
+2020-09-07 13:05:07,736 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 13:05:07,742 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 13:06:06,677 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 13:06:06,698 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 13:06:36,177 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 13:06:36,178 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 13:45:05,882 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 13:45:05,885 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 13:47:14,659 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 13:47:14,659 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 13:49:30,910 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 13:49:30,911 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 13:51:09,275 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 13:51:09,286 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 13:56:59,200 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 13:56:59,201 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 13:59:16,777 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 13:59:16,779 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 14:08:55,539 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 14:08:55,539 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki'
+2020-09-07 14:09:09,736 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 14:09:09,736 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/about'
+2020-09-07 14:09:19,115 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 14:09:19,115 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki'
+2020-09-07 14:09:31,972 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 14:09:31,973 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/admin'
+2020-09-07 14:09:37,818 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 14:09:37,818 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/WikiStart'
+2020-09-07 14:09:41,277 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 14:09:41,277 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/TracAdmin'
+2020-09-07 14:09:48,692 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 14:09:48,692 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/search'
+2020-09-07 14:09:50,894 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 14:09:50,894 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-07 14:09:56,428 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (No administration panels available), <RequestWithSession "GET '/admin'">, referrer None
+2020-09-07 14:09:56,497 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 14:09:56,498 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/admin'
+2020-09-07 14:13:23,350 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-07 14:13:23,794 Trac[perm] INFO: Granted permission for TRAC_ADMIN to admin
+2020-09-07 14:13:46,229 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-07 14:13:46,891 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-07 14:13:47,380 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 14:13:47,380 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/admin'
+2020-09-07 14:13:53,728 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 14:13:53,728 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/admin/general/plugin'
+2020-09-07 14:14:05,171 Trac[main] WARNING: [127.0.0.1] HTTPInternalServerError: 500 Trac Error (Uploaded file is not a Python source file or egg), <RequestWithSession "POST '/admin/general/plugin'">, referrer 'http://127.0.0.1:8000/admin/general/plugin'
+2020-09-07 14:14:05,282 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 14:14:05,283 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/admin/general/plugin'
+2020-09-07 14:17:07,817 Trac[web_ui] INFO: Installing plugin Latex-0.1-py2.7.egg
+2020-09-07 14:17:07,817 Trac[web_ui] INFO: Plugin Latex-0.1-py2.7.egg installed to /home/ozgur/my-trac/trac-wiki2doc/plugins/Latex-0.1-py2.7.egg
+2020-09-07 14:17:07,892 Trac[env] INFO: Reloading environment due to configuration change
+2020-09-07 14:17:07,916 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-07 14:17:08,084 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-07 14:17:08,720 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 14:17:08,722 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/admin/general/plugin'
+2020-09-07 14:17:50,183 Trac[formatter] ERROR: Processor Latex failed for <Resource u'wiki:metrics'>:
+Traceback (most recent call last):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/wiki/formatter.py", line 1222, in _exec_processor
+    return processor.process(text)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/wiki/formatter.py", line 389, in process
+    text = self.processor(text)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/wiki/formatter.py", line 361, in _macro_processor
+    text)
+  File "build/bdist.linux-x86_64/egg/latex/latexmacro.py", line 62, in expand_macro
+    images_folder = os.path.join(os.path.normpath(self.env.get_htdocs_dir()), 'latex-images')
+AttributeError: 'Environment' object has no attribute 'get_htdocs_dir'
+2020-09-07 14:17:50,346 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 14:17:50,353 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 14:19:04,591 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 14:19:04,591 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 14:49:58,916 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 14:49:58,917 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics?action=edit'
+2020-09-07 14:50:10,407 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 14:50:10,408 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 14:52:09,280 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 14:52:09,282 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 14:58:05,754 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 14:58:05,755 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 15:08:28,880 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 15:08:28,881 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 15:09:29,290 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 15:09:29,307 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 15:09:51,802 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 15:09:51,802 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 15:10:11,394 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 15:10:11,395 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 15:10:24,533 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 15:10:24,534 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 15:11:01,634 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 15:11:01,635 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 15:11:11,599 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 15:11:11,604 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 15:11:44,963 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 15:11:44,964 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 15:12:01,099 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 15:12:01,100 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 15:12:14,993 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 15:12:14,993 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 15:12:30,956 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 15:12:30,956 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 15:12:52,130 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 15:12:52,131 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 15:13:03,242 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 15:13:03,242 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 15:13:39,894 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 15:13:39,896 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/WikiFormatting'
+2020-09-07 15:17:11,861 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 15:17:11,862 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 15:18:06,630 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 15:18:06,632 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 15:19:06,822 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 15:19:06,823 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 15:19:19,421 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 15:19:19,422 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 15:19:44,731 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 15:19:44,788 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 15:22:15,796 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 15:22:15,796 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 15:22:47,534 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 15:22:47,534 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 15:23:20,293 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 15:23:20,293 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 15:24:38,177 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 15:24:38,178 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 15:25:50,630 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 15:25:50,631 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 15:26:28,673 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 15:26:28,674 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 15:27:14,536 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 15:27:14,574 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 15:28:12,438 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 15:28:12,438 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 15:29:13,593 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 15:29:13,593 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 15:30:32,614 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 15:30:32,615 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 15:31:52,545 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 15:31:52,545 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 15:32:31,984 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 15:32:31,985 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 15:33:11,036 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 15:33:11,037 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 15:35:36,683 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 15:35:36,684 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 15:35:54,335 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 15:35:54,336 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 15:36:23,750 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 15:36:23,750 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 15:36:35,486 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 15:36:35,487 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 15:37:04,982 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 15:37:04,982 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 15:37:10,869 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 15:37:10,869 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 15:37:29,383 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 15:37:29,384 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics?action=edit'
+2020-09-07 16:02:53,258 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:02:53,260 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 16:03:01,841 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-07 16:03:02,145 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:03:02,146 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-07 16:03:12,054 Trac[main] ERROR: [127.0.0.1] Internal Server Error: <RequestWithSession "POST '/wiki2doc'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+Traceback (most recent call last):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 639, in dispatch_request
+    dispatcher.dispatch(req)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 250, in dispatch
+    resp = chosen_handler.process_request(req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 140, in process_request
+    errorlog, content = self.process_document(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 229, in process_document
+    document.add_document(sections)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 62, in add_document
+    self.insert_section(paragraph, sections, 3)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 98, in insert_section
+    self.find_sections(params)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 210, in find_sections
+    self.filter_hyperlinks(args)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 256, in filter_hyperlinks
+    self.parse_html(args, context, wiki)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 271, in parse_html
+    DocumentHTMLParser(self.document, args[1], html_code)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/parser.py", line 10, in __init__
+    self.feed(html_code)
+  File "/usr/lib/python2.7/HTMLParser.py", line 117, in feed
+    self.goahead(0)
+  File "/usr/lib/python2.7/HTMLParser.py", line 206, in goahead
+    self.handle_entityref(name)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/parser.py", line 44, in handle_entityref
+    code_point = unichr(name2codepoint[name])
+NameError: global name 'name2codepoint' is not defined
+2020-09-07 16:03:12,539 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:03:12,541 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-07 16:06:17,036 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-07 16:06:17,714 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-07 16:06:18,164 Trac[main] ERROR: [127.0.0.1] Internal Server Error: <RequestWithSession "POST '/wiki2doc'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+Traceback (most recent call last):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 639, in dispatch_request
+    dispatcher.dispatch(req)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 250, in dispatch
+    resp = chosen_handler.process_request(req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 140, in process_request
+    errorlog, content = self.process_document(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 229, in process_document
+    document.add_document(sections)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 62, in add_document
+    self.insert_section(paragraph, sections, 3)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 98, in insert_section
+    self.find_sections(params)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 210, in find_sections
+    self.filter_hyperlinks(args)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 256, in filter_hyperlinks
+    self.parse_html(args, context, wiki)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 271, in parse_html
+    DocumentHTMLParser(self.document, args[1], html_code)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/parser.py", line 10, in __init__
+    self.feed(html_code)
+  File "/usr/lib/python2.7/HTMLParser.py", line 117, in feed
+    self.goahead(0)
+  File "/usr/lib/python2.7/HTMLParser.py", line 206, in goahead
+    self.handle_entityref(name)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/parser.py", line 44, in handle_entityref
+    code_point = unichr(name2codepoint[name])
+NameError: global name 'name2codepoint' is not defined
+2020-09-07 16:06:18,960 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:06:18,961 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-07 16:08:29,680 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-07 16:08:30,325 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-07 16:08:30,358 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-07 16:08:30,640 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:08:30,640 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-07 16:08:37,828 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:08:37,828 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-07 16:08:45,087 Trac[main] ERROR: [127.0.0.1] Internal Server Error: <RequestWithSession "POST '/wiki2doc'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+Traceback (most recent call last):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 639, in dispatch_request
+    dispatcher.dispatch(req)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 250, in dispatch
+    resp = chosen_handler.process_request(req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 140, in process_request
+    errorlog, content = self.process_document(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 225, in process_document
+    document.add_document(sections)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 62, in add_document
+    self.insert_section(paragraph, sections, 3)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 98, in insert_section
+    self.find_sections(params)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 210, in find_sections
+    self.filter_hyperlinks(args)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 256, in filter_hyperlinks
+    self.parse_html(args, context, wiki)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 271, in parse_html
+    DocumentHTMLParser(self.document, args[1], html_code)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/parser.py", line 10, in __init__
+    self.feed(html_code)
+  File "/usr/lib/python2.7/HTMLParser.py", line 117, in feed
+    self.goahead(0)
+  File "/usr/lib/python2.7/HTMLParser.py", line 206, in goahead
+    self.handle_entityref(name)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/parser.py", line 44, in handle_entityref
+    code_point = unichr(name2codepoint[name])
+NameError: global name 'name2codepoint' is not defined
+2020-09-07 16:08:45,604 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:08:45,604 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-07 16:12:55,274 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-07 16:12:55,948 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-07 16:12:56,415 Trac[main] ERROR: [127.0.0.1] Internal Server Error: <RequestWithSession "POST '/wiki2doc'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+Traceback (most recent call last):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 639, in dispatch_request
+    dispatcher.dispatch(req)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 250, in dispatch
+    resp = chosen_handler.process_request(req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 140, in process_request
+    errorlog, content = self.process_document(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 225, in process_document
+    document.add_document(sections)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 62, in add_document
+    self.insert_section(paragraph, sections, 3)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 98, in insert_section
+    self.find_sections(params)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 155, in find_sections
+    to_unicode(wiki_filter[1].match(line).group(1)))
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 329, in get_table
+    params[2][params[0]][0])
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 349, in insert_table
+    table = self.append_table(table_data, spec_name)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 398, in append_table
+    table = merge_table(table, merge_list)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/helpers.py", line 449, in merge_table
+    cell_a = row.cells[merge[idx][idy][0]]
+IndexError: tuple index out of range
+2020-09-07 16:12:57,287 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:12:57,287 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-07 16:13:33,960 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:13:33,961 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics?action=edit'
+2020-09-07 16:14:31,563 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:14:31,564 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 16:15:31,537 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:15:31,537 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 16:15:54,315 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:15:54,316 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 16:16:04,032 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:16:04,034 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 16:16:15,985 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:16:15,986 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 16:16:25,314 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:16:25,315 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 16:16:28,929 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-07 16:16:29,167 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:16:29,167 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-07 16:16:37,147 Trac[main] ERROR: [127.0.0.1] Internal Server Error: <RequestWithSession "POST '/wiki2doc'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+Traceback (most recent call last):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 639, in dispatch_request
+    dispatcher.dispatch(req)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 250, in dispatch
+    resp = chosen_handler.process_request(req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 140, in process_request
+    errorlog, content = self.process_document(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 225, in process_document
+    document.add_document(sections)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 62, in add_document
+    self.insert_section(paragraph, sections, 3)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 98, in insert_section
+    self.find_sections(params)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 155, in find_sections
+    to_unicode(wiki_filter[1].match(line).group(1)))
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 329, in get_table
+    params[2][params[0]][0])
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 349, in insert_table
+    table = self.append_table(table_data, spec_name)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 398, in append_table
+    table = merge_table(table, merge_list)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/helpers.py", line 449, in merge_table
+    cell_a = row.cells[merge[idx][idy][0]]
+IndexError: tuple index out of range
+2020-09-07 16:16:37,485 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:16:37,486 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-07 16:17:02,019 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:17:02,019 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics?action=edit'
+2020-09-07 16:17:12,262 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:17:12,262 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 16:17:20,217 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:17:20,218 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 16:17:21,957 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:17:21,958 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-07 16:17:30,523 Trac[main] ERROR: [127.0.0.1] Internal Server Error: <RequestWithSession "POST '/wiki2doc'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+Traceback (most recent call last):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 639, in dispatch_request
+    dispatcher.dispatch(req)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 250, in dispatch
+    resp = chosen_handler.process_request(req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 140, in process_request
+    errorlog, content = self.process_document(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 225, in process_document
+    document.add_document(sections)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 62, in add_document
+    self.insert_section(paragraph, sections, 3)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 98, in insert_section
+    self.find_sections(params)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 155, in find_sections
+    to_unicode(wiki_filter[1].match(line).group(1)))
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 329, in get_table
+    params[2][params[0]][0])
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 349, in insert_table
+    table = self.append_table(table_data, spec_name)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 398, in append_table
+    table = merge_table(table, merge_list)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/helpers.py", line 450, in merge_table
+    cell_b = row.cells[merge[idx][idy][1]]
+IndexError: tuple index out of range
+2020-09-07 16:17:30,957 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:17:30,958 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-07 16:18:00,631 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:18:00,631 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics?action=edit'
+2020-09-07 16:18:12,915 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:18:12,916 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 16:18:21,440 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:18:21,440 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-07 16:18:29,320 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:18:29,322 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-07 16:20:59,175 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:20:59,175 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics?action=edit'
+2020-09-07 16:21:56,278 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:21:56,279 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 16:24:02,703 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:24:02,704 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 16:24:19,721 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:24:19,722 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 16:24:22,415 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:24:22,415 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-07 16:24:31,861 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:24:31,862 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-07 16:25:13,965 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:25:13,965 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 16:25:19,168 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:25:19,168 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics?action=edit'
+2020-09-07 16:26:23,155 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:26:23,156 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 16:26:33,831 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:26:33,832 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 16:26:36,204 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:26:36,205 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-07 16:28:28,215 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:28:28,216 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics?action=edit'
+2020-09-07 16:28:47,312 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:28:47,313 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 16:28:56,557 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:28:56,558 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-07 16:29:03,478 Trac[main] ERROR: [127.0.0.1] Internal Server Error: <RequestWithSession "POST '/wiki2doc'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+Traceback (most recent call last):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 639, in dispatch_request
+    dispatcher.dispatch(req)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 250, in dispatch
+    resp = chosen_handler.process_request(req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 140, in process_request
+    errorlog, content = self.process_document(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 225, in process_document
+    document.add_document(sections)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 62, in add_document
+    self.insert_section(paragraph, sections, 3)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 98, in insert_section
+    self.find_sections(params)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 155, in find_sections
+    to_unicode(wiki_filter[1].match(line).group(1)))
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 329, in get_table
+    params[2][params[0]][0])
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 349, in insert_table
+    table = self.append_table(table_data, spec_name)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 398, in append_table
+    table = merge_table(table, merge_list)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/helpers.py", line 449, in merge_table
+    cell_a = row.cells[merge[idx][idy][0]]
+IndexError: tuple index out of range
+2020-09-07 16:29:03,888 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:29:03,888 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-07 16:30:06,515 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:30:06,515 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics?action=edit'
+2020-09-07 16:30:32,807 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:30:32,807 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-07 16:30:34,535 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:30:34,535 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-07 16:38:01,500 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:38:01,501 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/attachment/wiki/metrics/Precisionrecall.svg'
+2020-09-07 16:41:57,604 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-07 16:41:58,280 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-07 16:41:58,307 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-07 16:41:58,686 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:41:58,687 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-07 16:45:49,619 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-07 16:45:50,345 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-07 16:45:50,368 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-07 16:45:50,635 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:45:50,636 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-07 16:46:24,859 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:46:24,859 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics?action=edit'
+2020-09-07 16:49:38,720 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-07 16:49:39,395 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-07 16:49:39,431 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-07 16:49:39,708 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:49:39,709 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-07 16:49:46,612 Trac[main] ERROR: [127.0.0.1] Internal Server Error: <RequestWithSession "POST '/wiki2doc'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+Traceback (most recent call last):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 639, in dispatch_request
+    dispatcher.dispatch(req)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 250, in dispatch
+    resp = chosen_handler.process_request(req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 140, in process_request
+    errorlog, content = self.process_document(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 225, in process_document
+    document.add_document(sections)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 62, in add_document
+    self.insert_section(paragraph, sections, 3)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 98, in insert_section
+    self.find_sections(params)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 152, in find_sections
+    insert_image(params[1], img_path)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/helpers.py", line 476, in insert_image
+    run.add_picture(img_path, width=Inches(6.3))
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/docx/text/run.py", line 62, in add_picture
+    inline = self.part.new_pic_inline(image_path_or_stream, width, height)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/docx/parts/story.py", line 56, in new_pic_inline
+    rId, image = self.get_or_add_image(image_descriptor)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/docx/parts/story.py", line 29, in get_or_add_image
+    image_part = self._package.get_or_add_image_part(image_descriptor)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/docx/package.py", line 31, in get_or_add_image_part
+    return self.image_parts.get_or_add_image_part(image_descriptor)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/docx/package.py", line 74, in get_or_add_image_part
+    image = Image.from_file(image_descriptor)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/docx/image/image.py", line 55, in from_file
+    return cls._from_stream(stream, blob, filename)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/docx/image/image.py", line 176, in _from_stream
+    image_header = _ImageHeaderFactory(stream)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/docx/image/image.py", line 199, in _ImageHeaderFactory
+    raise UnrecognizedImageError
+UnrecognizedImageError: 
+2020-09-07 16:49:47,128 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 16:49:47,129 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-07 21:31:29,205 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-07 21:31:29,924 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-07 21:31:29,949 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-07 21:31:30,219 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-07 21:31:30,220 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-07 21:39:27,268 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-07 21:39:28,023 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-12 22:34:23,283 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-12 22:34:24,579 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-12 22:34:24,629 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-12 22:34:26,284 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-12 22:34:26,286 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-12 22:35:57,734 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-12 22:35:58,952 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-12 22:35:59,000 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-12 22:35:59,477 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-12 22:35:59,479 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-12 22:36:08,106 Trac[main] ERROR: [127.0.0.1] Internal Server Error: <RequestWithSession "POST '/wiki2doc'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+Traceback (most recent call last):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 639, in dispatch_request
+    dispatcher.dispatch(req)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 250, in dispatch
+    resp = chosen_handler.process_request(req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 140, in process_request
+    errorlog, content = self.process_document(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 225, in process_document
+    document.add_document(sections)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 62, in add_document
+    self.insert_section(paragraph, sections, 3)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 98, in insert_section
+    self.find_sections(params)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 164, in find_sections
+    style=style_key)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/docx/text/paragraph.py", line 76, in insert_paragraph_before
+    paragraph.style = style
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/docx/text/paragraph.py", line 111, in style
+    style_or_name, WD_STYLE_TYPE.PARAGRAPH
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/docx/parts/document.py", line 78, in get_style_id
+    return self.styles.get_style_id(style_or_name, style_type)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/docx/styles/styles.py", line 109, in get_style_id
+    return self._get_style_id_from_name(style_or_name, style_type)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/docx/styles/styles.py", line 139, in _get_style_id_from_name
+    return self._get_style_id_from_style(self[style_name], style_type)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/docx/styles/styles.py", line 53, in __getitem__
+    raise KeyError("no style with name '%s'" % key)
+KeyError: u"no style with name 'Heading 0'"
+2020-09-12 22:36:08,821 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-12 22:36:08,822 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-12 22:39:40,245 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-12 22:39:41,403 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-12 22:39:41,458 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-12 22:39:41,909 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-12 22:39:41,909 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-12 22:39:48,109 Trac[main] ERROR: [127.0.0.1] Internal Server Error: <RequestWithSession "POST '/wiki2doc'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+Traceback (most recent call last):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 639, in dispatch_request
+    dispatcher.dispatch(req)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 250, in dispatch
+    resp = chosen_handler.process_request(req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 140, in process_request
+    errorlog, content = self.process_document(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 225, in process_document
+    document.add_document(sections)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 62, in add_document
+    self.insert_section(paragraph, sections, 3)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 98, in insert_section
+    self.find_sections(params)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 164, in find_sections
+    style=style_key)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/docx/text/paragraph.py", line 76, in insert_paragraph_before
+    paragraph.style = style
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/docx/text/paragraph.py", line 111, in style
+    style_or_name, WD_STYLE_TYPE.PARAGRAPH
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/docx/parts/document.py", line 78, in get_style_id
+    return self.styles.get_style_id(style_or_name, style_type)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/docx/styles/styles.py", line 109, in get_style_id
+    return self._get_style_id_from_name(style_or_name, style_type)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/docx/styles/styles.py", line 139, in _get_style_id_from_name
+    return self._get_style_id_from_style(self[style_name], style_type)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/docx/styles/styles.py", line 53, in __getitem__
+    raise KeyError("no style with name '%s'" % key)
+KeyError: u"no style with name 'Heading 0'"
+2020-09-12 22:39:48,809 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-12 22:39:48,810 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-12 22:43:34,519 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-12 22:43:35,567 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-12 22:43:35,607 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-12 22:43:35,996 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-12 22:43:35,997 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-12 22:44:19,921 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-12 22:44:19,933 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/helloworld'
+2020-09-12 22:44:32,557 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-12 22:44:32,557 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-12 22:45:17,253 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-12 22:45:17,254 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics?action=edit'
+2020-09-12 22:51:09,935 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-12 22:51:11,204 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-12 22:53:14,697 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-12 22:53:15,986 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-12 22:55:24,311 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-12 22:55:25,592 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-12 22:58:29,869 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-12 22:58:31,190 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-12 23:07:36,325 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-12 23:07:37,547 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 01:09:19,014 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 01:09:19,560 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 01:10:10,288 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 01:10:10,871 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 01:10:57,889 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 01:10:58,442 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 11:10:53,511 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 11:10:54,118 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 11:12:06,455 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 11:12:07,100 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 11:23:18,500 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 11:23:19,024 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 11:23:19,043 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-13 11:23:19,330 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 11:23:19,331 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 11:26:46,511 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 11:26:47,115 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 11:27:44,491 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 11:27:45,229 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 11:28:12,675 Trac[main] ERROR: [127.0.0.1] Internal Server Error: <RequestWithSession "POST '/wiki2doc'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+Traceback (most recent call last):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 639, in dispatch_request
+    dispatcher.dispatch(req)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 250, in dispatch
+    resp = chosen_handler.process_request(req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 140, in process_request
+    errorlog, content = self.process_document(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 223, in process_document
+    sections = self.get_images_in_text(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 291, in get_images_in_text
+    print("img_filename", img_filename, os.getcwd())
+NameError: global name 'os' is not defined
+2020-09-13 11:28:13,436 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 11:28:13,436 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 11:28:59,089 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 11:28:59,699 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 11:28:59,719 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-13 11:40:40,684 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 11:40:41,304 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 11:40:42,667 Trac[main] ERROR: [127.0.0.1] Internal Server Error: <RequestWithSession "POST '/wiki2doc'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+Traceback (most recent call last):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 639, in dispatch_request
+    dispatcher.dispatch(req)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 250, in dispatch
+    resp = chosen_handler.process_request(req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 140, in process_request
+    errorlog, content = self.process_document(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 223, in process_document
+    sections = self.get_images_in_text(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 297, in get_images_in_text
+    renderPM.drawToFile(drawing, png_filename, fmt="PNG")
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/reportlab/graphics/renderPM.py", line 681, in drawToFile
+    c.saveToFile(fn,fmt)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/reportlab/graphics/renderPM.py", line 374, in saveToFile
+    im.save(fn,fmt,**configPIL)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/PIL/Image.py", line 2081, in save
+    fp = builtins.open(filename, "w+b")
+IOError: [Errno 2] No such file or directory: u'/home/ozgur/my-trac/tmp/Precisionrecall.svg/.png'
+2020-09-13 11:40:43,489 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 11:40:43,490 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 11:42:00,654 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 11:42:01,316 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 11:42:01,341 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-13 11:44:00,017 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 11:44:00,708 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 11:45:09,982 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 11:45:10,622 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 11:53:16,789 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 11:53:17,416 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 11:53:18,900 Trac[main] ERROR: [127.0.0.1] Internal Server Error: <RequestWithSession "POST '/wiki2doc'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+Traceback (most recent call last):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 639, in dispatch_request
+    dispatcher.dispatch(req)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 250, in dispatch
+    resp = chosen_handler.process_request(req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 140, in process_request
+    errorlog, content = self.process_document(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 223, in process_document
+    sections = self.get_images_in_text(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 307, in get_images_in_text
+    attachment.insert(png_filename, StringIO(img_png), len(img_png))
+NameError: global name 'StringIO' is not defined
+2020-09-13 11:53:19,740 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 11:53:19,741 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 11:53:57,378 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 11:53:58,103 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 11:53:58,124 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-13 11:54:01,279 Trac[main] ERROR: [127.0.0.1] Internal Server Error: <RequestWithSession "POST '/wiki2doc'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+Traceback (most recent call last):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 639, in dispatch_request
+    dispatcher.dispatch(req)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 250, in dispatch
+    resp = chosen_handler.process_request(req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 140, in process_request
+    errorlog, content = self.process_document(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 223, in process_document
+    sections = self.get_images_in_text(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 308, in get_images_in_text
+    attachment.insert(png_filename, StringIO(img_png), len(img_png))
+TypeError: 'module' object is not callable
+2020-09-13 11:54:02,093 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 11:54:02,094 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 11:57:47,971 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 11:57:48,623 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 11:57:50,214 Trac[attachment] INFO: New attachment: wiki:metrics: Precisionrecall.png by None
+2020-09-13 11:57:50,225 Trac[main] ERROR: [127.0.0.1] Internal Server Error: <RequestWithSession "POST '/wiki2doc'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+Traceback (most recent call last):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 639, in dispatch_request
+    dispatcher.dispatch(req)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 250, in dispatch
+    resp = chosen_handler.process_request(req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 140, in process_request
+    errorlog, content = self.process_document(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 223, in process_document
+    sections = self.get_images_in_text(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 313, in get_images_in_text
+    page_images = dict(zip(img_list, path_list))
+TypeError: unhashable type: 'list'
+2020-09-13 11:57:51,116 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 11:57:51,116 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 12:00:08,509 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 12:00:09,074 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 12:00:10,547 Trac[attachment] INFO: New attachment: wiki:metrics: Precisionrecall.jpg by None
+2020-09-13 12:00:10,562 Trac[main] ERROR: [127.0.0.1] Internal Server Error: <RequestWithSession "POST '/wiki2doc'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+Traceback (most recent call last):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 639, in dispatch_request
+    dispatcher.dispatch(req)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 250, in dispatch
+    resp = chosen_handler.process_request(req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 140, in process_request
+    errorlog, content = self.process_document(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 223, in process_document
+    sections = self.get_images_in_text(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 313, in get_images_in_text
+    page_images = dict(zip(img_list, path_list))
+TypeError: unhashable type: 'list'
+2020-09-13 12:00:11,403 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 12:00:11,403 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 12:03:30,939 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 12:03:31,560 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 12:03:33,090 Trac[main] ERROR: [127.0.0.1] Internal Server Error: <RequestWithSession "POST '/wiki2doc'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+Traceback (most recent call last):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 639, in dispatch_request
+    dispatcher.dispatch(req)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 250, in dispatch
+    resp = chosen_handler.process_request(req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 140, in process_request
+    errorlog, content = self.process_document(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 223, in process_document
+    sections = self.get_images_in_text(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 313, in get_images_in_text
+    page_images = dict(zip(img_list, path_list))
+TypeError: unhashable type: 'list'
+2020-09-13 12:03:33,922 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 12:03:33,923 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 12:04:06,894 Trac[main] ERROR: [127.0.0.1] Internal Server Error: <RequestWithSession "POST '/wiki2doc'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+Traceback (most recent call last):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 639, in dispatch_request
+    dispatcher.dispatch(req)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 250, in dispatch
+    resp = chosen_handler.process_request(req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 140, in process_request
+    errorlog, content = self.process_document(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 223, in process_document
+    sections = self.get_images_in_text(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 313, in get_images_in_text
+    page_images = dict(zip(img_list, path_list))
+TypeError: unhashable type: 'list'
+2020-09-13 12:04:07,285 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 12:04:07,286 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 12:04:59,388 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 12:05:00,023 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 12:05:01,504 Trac[main] ERROR: [127.0.0.1] Internal Server Error: <RequestWithSession "POST '/wiki2doc'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+Traceback (most recent call last):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 639, in dispatch_request
+    dispatcher.dispatch(req)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 250, in dispatch
+    resp = chosen_handler.process_request(req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 140, in process_request
+    errorlog, content = self.process_document(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 223, in process_document
+    sections = self.get_images_in_text(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 313, in get_images_in_text
+    page_images = dict(zip(img_list, path_list))
+TypeError: unhashable type: 'list'
+2020-09-13 12:05:02,287 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 12:05:02,287 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 12:05:52,094 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 12:05:52,690 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 12:05:54,264 Trac[main] ERROR: [127.0.0.1] Internal Server Error: <RequestWithSession "POST '/wiki2doc'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+Traceback (most recent call last):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 639, in dispatch_request
+    dispatcher.dispatch(req)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 250, in dispatch
+    resp = chosen_handler.process_request(req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 140, in process_request
+    errorlog, content = self.process_document(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 223, in process_document
+    sections = self.get_images_in_text(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 313, in get_images_in_text
+    page_images = dict(zip(img_list, path_list))
+TypeError: unhashable type: 'list'
+2020-09-13 12:05:55,052 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 12:05:55,053 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 12:07:34,407 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 12:07:35,058 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 12:08:44,255 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 12:08:44,871 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 12:08:46,428 Trac[main] ERROR: [127.0.0.1] Internal Server Error: <RequestWithSession "POST '/wiki2doc'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+Traceback (most recent call last):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 639, in dispatch_request
+    dispatcher.dispatch(req)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 250, in dispatch
+    resp = chosen_handler.process_request(req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 140, in process_request
+    errorlog, content = self.process_document(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 223, in process_document
+    sections = self.get_images_in_text(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 313, in get_images_in_text
+    page_images = dict(zip(img_list, path_list))
+TypeError: unhashable type: 'list'
+2020-09-13 12:08:47,236 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 12:08:47,237 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 12:10:27,307 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 12:10:28,048 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 12:10:28,066 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-13 12:10:31,103 Trac[attachment] INFO: New attachment: wiki:metrics: Precisionrecall.2.png by None
+2020-09-13 12:10:40,836 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 12:10:40,836 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki'
+2020-09-13 12:10:50,027 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 12:10:50,027 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-13 12:11:14,568 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 12:11:14,568 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/attachment/wiki/metrics/Precisionrecall.png'
+2020-09-13 12:15:33,178 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 12:15:33,178 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/attachment/wiki/metrics/Precisionrecall.2.png'
+2020-09-13 12:15:37,681 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 12:15:37,681 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/attachment/wiki/metrics/Precisionrecall.2.png?action=delete'
+2020-09-13 12:15:39,016 Trac[attachment] INFO: Attachment removed: wiki:metrics: Precisionrecall.2.png
+2020-09-13 12:15:39,199 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 12:15:39,200 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-13 12:15:46,975 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 12:15:46,976 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/attachment/wiki/metrics/Precisionrecall.png'
+2020-09-13 12:15:49,945 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 12:15:49,945 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/attachment/wiki/metrics/Precisionrecall.png?action=delete'
+2020-09-13 12:15:51,472 Trac[attachment] INFO: Attachment removed: wiki:metrics: Precisionrecall.png
+2020-09-13 12:15:51,705 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 12:15:51,706 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-13 12:16:27,232 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 12:16:27,845 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 12:16:29,367 Trac[attachment] INFO: New attachment: wiki:metrics: Precisionrecall.png by None
+2020-09-13 12:16:35,676 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 12:16:35,676 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-13 12:16:55,459 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 12:16:55,459 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-13 12:23:09,815 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 12:23:10,501 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 12:33:43,981 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 12:33:44,663 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 12:36:11,615 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 12:36:12,632 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 12:38:51,839 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 12:38:52,509 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 12:39:53,395 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 12:39:54,055 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 12:42:56,607 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 12:42:57,295 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 12:43:49,554 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 12:43:50,253 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 12:48:33,532 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 12:48:34,192 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 12:49:30,197 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 12:49:30,876 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 12:50:06,951 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 12:50:07,611 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 12:55:29,041 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 12:55:29,804 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 12:55:31,621 Trac[main] ERROR: [127.0.0.1] Internal Server Error: <RequestWithSession "POST '/wiki2doc'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+Traceback (most recent call last):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 639, in dispatch_request
+    dispatcher.dispatch(req)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 250, in dispatch
+    resp = chosen_handler.process_request(req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 140, in process_request
+    errorlog, content = self.process_document(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 225, in process_document
+    document.add_document(sections)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 62, in add_document
+    self.insert_section(paragraph, sections, 3)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 98, in insert_section
+    self.find_sections(params)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 152, in find_sections
+    insert_image(params[1], img_path)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/helpers.py", line 474, in insert_image
+    image = PIL.Image.open(img_path)
+NameError: global name 'PIL' is not defined
+2020-09-13 12:55:32,525 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 12:55:32,525 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 12:56:15,453 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 12:56:16,086 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 12:56:16,106 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-13 13:01:30,646 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 13:01:31,519 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 13:01:33,366 Trac[main] ERROR: [127.0.0.1] Internal Server Error: <RequestWithSession "POST '/wiki2doc'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+Traceback (most recent call last):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 639, in dispatch_request
+    dispatcher.dispatch(req)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 250, in dispatch
+    resp = chosen_handler.process_request(req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 140, in process_request
+    errorlog, content = self.process_document(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 225, in process_document
+    document.add_document(sections)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 62, in add_document
+    self.insert_section(paragraph, sections, 3)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 98, in insert_section
+    self.find_sections(params)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/doc.py", line 152, in find_sections
+    insert_image(params[1], img_path)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/helpers.py", line 479, in insert_image
+    from PyQt5.QtWidgets import QApplication
+ImportError: No module named PyQt5.QtWidgets
+2020-09-13 13:01:34,145 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 13:01:34,145 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 13:14:20,344 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 13:14:20,905 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 13:14:20,926 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-13 13:14:21,194 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 13:14:21,194 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 15:10:22,629 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 15:10:24,412 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 15:10:24,440 Trac[main] ERROR: [127.0.0.1] Internal Server Error: <RequestWithSession "POST '/wiki2doc'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+Traceback (most recent call last):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 639, in dispatch_request
+    dispatcher.dispatch(req)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 250, in dispatch
+    resp = chosen_handler.process_request(req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 144, in process_request
+    errorlog, content = self.process_document(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 227, in process_document
+    sections = self.get_images_in_text(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 294, in get_images_in_text
+    svg_flag, img_filename, img_path = convert_svg(self,
+NameError: global name 'convert_svg' is not defined
+2020-09-13 15:10:25,322 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 15:10:25,323 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 15:11:54,476 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 15:11:55,967 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 15:11:55,987 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-13 15:11:57,440 Trac[main] ERROR: [127.0.0.1] Internal Server Error: <RequestWithSession "POST '/wiki2doc'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+Traceback (most recent call last):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 639, in dispatch_request
+    dispatcher.dispatch(req)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 250, in dispatch
+    resp = chosen_handler.process_request(req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 144, in process_request
+    errorlog, content = self.process_document(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 227, in process_document
+    sections = self.get_images_in_text(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 297, in get_images_in_text
+    fmt='PNG')
+TypeError: convert_svg() got multiple values for keyword argument 'fmt'
+2020-09-13 15:11:58,213 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 15:11:58,214 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 15:12:48,093 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 15:12:49,684 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 15:12:49,712 Trac[main] ERROR: [127.0.0.1] Internal Server Error: <RequestWithSession "POST '/wiki2doc'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+Traceback (most recent call last):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 639, in dispatch_request
+    dispatcher.dispatch(req)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 250, in dispatch
+    resp = chosen_handler.process_request(req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 144, in process_request
+    errorlog, content = self.process_document(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 227, in process_document
+    sections = self.get_images_in_text(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 297, in get_images_in_text
+    'PNG')
+TypeError: convert_svg() takes exactly 4 arguments (5 given)
+2020-09-13 15:12:50,481 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 15:12:50,482 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 15:14:10,279 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 15:14:12,013 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 15:14:12,038 Trac[main] ERROR: [127.0.0.1] Internal Server Error: <RequestWithSession "POST '/wiki2doc'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+Traceback (most recent call last):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 639, in dispatch_request
+    dispatcher.dispatch(req)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 250, in dispatch
+    resp = chosen_handler.process_request(req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 144, in process_request
+    errorlog, content = self.process_document(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 227, in process_document
+    sections = self.get_images_in_text(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 296, in get_images_in_text
+    'PNG')
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 351, in convert_svg
+    drawing = svg2rlg(img_path)
+UnboundLocalError: local variable 'img_path' referenced before assignment
+2020-09-13 15:14:12,844 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 15:14:12,845 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 15:15:25,388 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 15:15:26,996 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 15:15:27,615 Trac[main] ERROR: [127.0.0.1] Internal Server Error: <RequestWithSession "POST '/wiki2doc'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+Traceback (most recent call last):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 639, in dispatch_request
+    dispatcher.dispatch(req)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 250, in dispatch
+    resp = chosen_handler.process_request(req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 144, in process_request
+    errorlog, content = self.process_document(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 227, in process_document
+    sections = self.get_images_in_text(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 297, in get_images_in_text
+    'PNG')
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 381, in convert_svg
+    req)
+NameError: global name 'req' is not defined
+2020-09-13 15:15:28,493 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 15:15:28,493 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 15:16:13,455 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 15:16:14,940 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 15:16:15,581 Trac[main] ERROR: [127.0.0.1] Internal Server Error: <RequestWithSession "POST '/wiki2doc'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+Traceback (most recent call last):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 639, in dispatch_request
+    dispatcher.dispatch(req)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/main.py", line 250, in dispatch
+    resp = chosen_handler.process_request(req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 144, in process_request
+    errorlog, content = self.process_document(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 227, in process_document
+    sections = self.get_images_in_text(page, req)
+  File "build/bdist.linux-x86_64/egg/wiki2doc/wiki2doc.py", line 306, in get_images_in_text
+    png_file = svg_filename[0] + ".png"
+NameError: global name 'svg_filename' is not defined
+2020-09-13 15:16:16,356 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 15:16:16,356 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 15:19:33,314 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 15:19:34,931 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 15:54:04,762 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 15:54:06,481 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 17:09:37,134 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 17:09:38,665 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 17:14:35,916 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 17:14:37,630 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 17:52:33,820 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 17:52:35,416 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect

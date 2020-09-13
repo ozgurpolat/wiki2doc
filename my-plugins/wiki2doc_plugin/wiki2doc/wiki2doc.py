@@ -16,7 +16,7 @@ from trac.util.text import to_unicode
 from trac.util import content_disposition
 from helpers import get_base_url
 from helpers import set_req_keys
-from helpers import get_tables_in_text
+from helpers import get_sections_with_tables
 from helpers import get_base_url
 from doc import Doc
 import numpy as np
@@ -33,6 +33,10 @@ from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from itertools import groupby
 import sys
+from svglib.svglib import svg2rlg
+from reportlab.graphics import renderPDF, renderPM
+import os
+from StringIO import StringIO
 
 
 TEMPLATE_INSTANCE = 'req'
@@ -66,21 +70,18 @@ class Wiki2Doc(Component):
              'get_wiki_link': to_unicode(req_keys['get_wiki_link']),
         }
 
-        print('self.data', self.data)
-
     def set_default_data(self, req):
         """ Sets default self.data for
             the intial loading of wiki2doc."""
 
         get_doc_template = get_base_url(req) + u'attachment/wiki/attachments/template.docx'
-        get_wiki_link = get_base_url(req) + u'wiki/helloworld'
+        get_wiki_link = get_base_url(req) + u'wiki/metrics'
         
         req_keys = {'create_report': u'Create Wiki Doc',
                     '__FORM_TOKEN': u'a59a7f79fdf7bd881c7b4197',
                     'get_doc_template': get_doc_template,
                     'get_wiki_link': get_wiki_link,}
         
-        print('req_keys', req_keys)
         self.set_data(req_keys)
         
         return req_keys
@@ -111,70 +112,42 @@ class Wiki2Doc(Component):
         Optionally, the return value can also be a (template_name, data,
         metadata) triple, where metadata is a dict with hints for the
         template engine or the web front-end."""
-
-        print('DIR_req', dir(req))
-        print('dir(req):{}'.format(dir(req)))
-        print('query_string:{}'.format(req.query_string))
-        print('path_info:{}'.format(req.path_info))
         
         self.errorlog = []
         action = req.args.get('create_report', '__FORM_TOKEN')
         req_keys = set_req_keys(req)
-        print('FIRST: req keys', req_keys)
         
         if all(x is None for x in req_keys):
-            print('SECOND: req keys', req_keys)
             self.set_default_data(req)
         else:
-            print("ELSE")
-        
-        print('THIRD:req keys', req_keys)
-        print('action:', action)
-        print('self.env', self.env)
+            pass
 
         if req.method == 'POST':
             errorlog = []
-            print('request is not:', req)
-            print('request args:', req.args)
  
             page_path = req.args.get('get_wiki_link')
- 
-            print('page_path', page_path)
  
             match_path = re.match(
                 r"(http://|e:)(.*|/)wiki/(.*)",
                 page_path)
  
             if match_path:
-                spec_name = re.split(r'\s+', match_path.group(3))
-                spec_name = spec_name[0]
-                spec_name = spec_name.split("|")
-                spec_name = spec_name[0]
-                spec_name = urllib.unquote(spec_name)
-                print(spec_name)
-                #resource = Resource('wiki', spec_name[0], 1)
-                page = WikiPage(self.env, spec_name)
- 
-                print(page.name)
-                print('dir(print(page))', dir(page))
-                print('page.exists', page.exists)
+                page_name = re.split(r'\s+', match_path.group(3))
+                page_name = page_name[0]
+                page_name = page_name.split("|")
+                page_name = page_name[0]
+                page_name = urllib.unquote(page_name)
+                #resource = Resource('wiki', page_name[0], 1)
+                page = WikiPage(self.env, page_name)
                  
                 if page.exists == True:
                     errorlog, content = self.process_document(page, req)
-                    print('True errorlog', errorlog)
                 else:
                     errorlog.append(("Page {} does not exist.".format(page.name), page.name))
-                    print('False errorlog', errorlog)
-                # select dropdowns in form
-#                 keys = [project, igrmilestone,
-#                         milestone, igrtask,
-#                         ogrtask, clicked_button]
  
                 self.data['errorlog'] = errorlog
-                print('errorlog', errorlog)
                   
                 if len(errorlog) == 0:
-                    print('PASSED!')
                     self.data['form'] = {
                          'create_report': to_unicode(req_keys[0]),
                          '__FORM_TOKEN': to_unicode(req_keys[1]),
@@ -217,21 +190,13 @@ class Wiki2Doc(Component):
 
     def get_template(self, req):
         """ return path of standard auto report template """
-  
-        print("get_template:")
-        print(req)
           
         page_path = get_base_url(req) + 'wiki/' + TEMPLATE_PAGE
 #         self.envs[TEMPLATE_INSTANCE].project_url +\
 #             '/wiki/' + TEMPLATE_PAGE
   
-        print("YES YES page_path", page_path)
-        print('Att.select', Attachment.select(self.env, 'wiki', TEMPLATE_PAGE))
-  
         for attachment in Attachment.select(self.env, 'wiki', TEMPLATE_PAGE):
-            print('attachment.filename', attachment.filename, 'TEMPLATE_NAME', TEMPLATE_NAME)
             if attachment.filename == TEMPLATE_NAME:
-                print('attachment.path', attachment.path)
                 return attachment.path
         self.errorlog.append(
             ("Attachment {} could not be found at {}.".\
@@ -259,28 +224,17 @@ class Wiki2Doc(Component):
         document = self.create_document(req)
     
         if document != None:
-            sections = self.get_images_in_text(page, req)
-            print('1.sections', sections)
-             
-            #sections = np.array(sections)
-             
-            #print('shape', sections.shape)
-             
-            sections = get_tables_in_text(sections)
-            print('2.sections', sections)
-             
+            sections = self.get_sections_with_images(page, req)
+            sections = get_sections_with_tables(sections)
             document.add_document(sections)
-            print('OK So far after document.add_document(sections)')
             return self.errorlog, document.get_content()
         else:
             return self.errorlog, None
      
     def create_document(self, req):
         """ Creates document class """
-        print('req.path', req.href, req.base_path, req.base_url, req.path_info, req.query_string)
+
         args = []
- 
-        print('self.get_template:', self.get_template(req))
  
         args = [self.get_template(req),
                 self.env,
@@ -292,71 +246,83 @@ class Wiki2Doc(Component):
             return document
         except:
             self.errorlog.append(("Document could not be created due to unexpected error: {}.".format(sys.exc_info()[0]), req.args))
-            print("UDocument could not be created due to unexpected error:", sys.exc_info()[0]) 
-        
+
         return None
- 
-    def get_images_in_text(self, page, req):
-        """ given a list of sections, returns a list of sections
+
+    def get_sections_with_images(self, page, req):
+        """ given a page, returns a list of sections
             with attached images stored in a dictionary where key
-            is the image file name in the spec and value is the
+            is the image file name in the page and value is the
             file path to that image """
  
         sections_with_imgs = []
-        spec_images = {}
+        page_images = {}
         img_list = []
         path_list = []
         img_filename = None
         img_path = None
-        image = re.compile(r'\s*\[\[Image\((.*(\.jpg|\.png|\.gif))\)\]\]\s*')
+        image = re.compile(r'\s*\[\[Image\((.*(\.jpg|\.png|\.gif|\.svg))\)\]\]\s*')
  
         text = page.text
         # Adding a new line to the last line to ensure that
         # all lines are processes (especially if there are
         # tables  later in get_tables_in_text function
         text = text + '\n\n'
+
+        svg_flag = False
+
         if text is not None:
             for line in text.splitlines():
                 match = image.match(line)
                 if match:
                     img_filename = match.group(1)
-                    
                     img_filename_list = img_filename.split(':')
-                    
+
                     # Handiling image from another page [[Image(wiki:Another_page:hello_world.jpg)]]
                     if len(img_filename_list) == 3:
-                        print('len(img_filename_list)', len(img_filename_list), img_filename_list[-1])
                         img_filename = img_filename_list[2]                    
-                        spec_name = img_filename_list[1]
-                        print('pagexxx,', page)
-                        
-                        page = WikiPage(self.env, spec_name)
-                        
+                        page_name = img_filename_list[1]                        
+                        page = WikiPage(self.env, page_name)
+
                     img_path = \
                         self.get_image_file(img_filename,
                                             page,
                                             req)
-                    
+
+                    if img_filename.endswith('.svg'):
+                        svg_flag, \
+                        svg_filename, \
+                        img_filename, \
+                        img_path = self.convert_svg(req,
+                                                    page,
+                                                    img_filename,
+                                                    img_path,
+                                                    'PNG')
+
                     if img_filename and img_path:
                         img_list.append(img_filename)
                         path_list.append(img_path)
-        spec_images = dict(zip(img_list, path_list))
-        sections_with_imgs.append([page.name, text, spec_images])
-        spec_images = {}
- 
+        page_images = dict(zip(img_list, path_list))
+
+        if svg_flag:
+            png_file = svg_filename[0] + ".png"
+            svg_file = svg_filename[0] + ".svg"
+            text = re.sub(svg_file, png_file, text)
+
+        sections_with_imgs.append([page.name, text, page_images])
+        page_images = {}
+
         return sections_with_imgs
- 
-    def get_wikipage(self, spec_name):
+
+    def get_wikipage(self, page_name):
         """ return a wiki page """
  
-        page = WikiPage(self.env, spec_name)
+        page = WikiPage(self.env, page_name)
         if page.exists:
             return page
- 
+
     def get_image_file(self, filename, page, req):
         """ return path of image attachment """
-        
-        print('YES get_image_file')
         
         page_path = req.args.get('get_wiki_link')
  
@@ -364,12 +330,9 @@ class Wiki2Doc(Component):
             for attachment in Attachment.select(page.env,
                                                 page.realm,
                                                 page.resource.id):
-                
-                print('Inside get_image_file attachment.filename ==? filename', attachment.filename, filename)
-                
+
                 if attachment.filename == filename:
 #                    path = str(attachment.path)
-                    print("Inside get_image_file:", attachment.filename, filename)
                     return attachment.path
             self.errorlog.append(
                 ("Attachment image {} could not be found at {}".\
@@ -379,4 +342,38 @@ class Wiki2Doc(Component):
             self.errorlog.append(
                 ("Page {} could not be found!".format(page.name),
                  page_path))
+            
+    def convert_svg(self, req, page, img_filename, img_path, fmt):
+        
+        svg_flag = True
+        svg_filename = img_filename.split('.')
+
+        drawing = svg2rlg(img_path)
+        
+        tmp_dir = os.path.join(os.getcwd(), "tmp")
+        if not os.path.exists(tmp_dir):
+            os.mkdir(tmp_dir)
+        fmt_path= os.path.join(tmp_dir, svg_filename[0] + ".png")
+        renderPM.drawToFile(drawing, fmt_path, fmt=fmt)
+        attachment = Attachment(page.env,
+                                page.realm,
+                                page.resource.id)
+        img_fmt=open(fmt_path,"rb").read()
+        fmt_filename = svg_filename[0] + ".png"
+        insert_flag = True
+        for attachment in Attachment.select(page.env,
+                                            page.realm,
+                                            page.resource.id):
+
+            if attachment.filename == fmt_filename:
+                insert_flag = False
+        if insert_flag:      
+            attachment.insert(fmt_filename, StringIO(img_fmt), len(img_fmt))
+        
+        img_filename = fmt_filename
+        img_path = \
+            self.get_image_file(img_filename,
+                                page,
+                                req)
+        return svg_flag, svg_filename, img_filename, img_path 
     
