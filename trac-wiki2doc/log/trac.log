@@ -5141,3 +5141,663 @@ NameError: global name 'svg_filename' is not defined
 2020-09-13 18:48:03,116 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
 2020-09-13 18:48:03,409 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
 2020-09-13 18:48:03,409 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 19:48:24,961 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 19:48:26,435 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 19:48:26,454 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-13 19:48:26,604 Trac[chrome] ERROR: Genshi TypeError error while rendering template (unknown template location)
+Traceback (most recent call last):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/chrome.py", line 1871, in _iterable_genshi_content
+    for chunk in stream.serialize(method, **kwargs):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 477, in __call__
+    for kind, data, _ in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 831, in __call__
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 671, in __call__
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 776, in __call__
+    for kind, data, pos in chain(stream, [(None, None, None)]):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 596, in __call__
+    for ev in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/chrome.py", line 1902, in _strip_accesskeys
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/chrome.py", line 1891, in _generate
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 639, in _include
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 379, in _match
+    ctxt, start=idx + 1, **vars):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 379, in _match
+    ctxt, start=idx + 1, **vars):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 327, in _match
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 579, in _flatten
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/path.py", line 588, in _generate
+    subevent = next()
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 639, in _include
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 316, in _strip
+    event = next()
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 579, in _flatten
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/path.py", line 588, in _generate
+    subevent = next()
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 639, in _include
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 316, in _strip
+    event = next()
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 589, in _flatten
+    for event in self._flatten(value, ctxt, **vars)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 579, in _flatten
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 272, in _ensure
+    stream = iter(stream)
+TypeError: 'Href' object is not iterable
+2020-09-13 19:48:26,744 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 19:48:26,745 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 19:48:45,896 Trac[chrome] ERROR: Genshi TypeError error while rendering template (unknown template location)
+Traceback (most recent call last):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/chrome.py", line 1871, in _iterable_genshi_content
+    for chunk in stream.serialize(method, **kwargs):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 477, in __call__
+    for kind, data, _ in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 831, in __call__
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 671, in __call__
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 776, in __call__
+    for kind, data, pos in chain(stream, [(None, None, None)]):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 596, in __call__
+    for ev in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/chrome.py", line 1902, in _strip_accesskeys
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/chrome.py", line 1891, in _generate
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 639, in _include
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 379, in _match
+    ctxt, start=idx + 1, **vars):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 379, in _match
+    ctxt, start=idx + 1, **vars):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 327, in _match
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 579, in _flatten
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/path.py", line 588, in _generate
+    subevent = next()
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 639, in _include
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 316, in _strip
+    event = next()
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 579, in _flatten
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/path.py", line 588, in _generate
+    subevent = next()
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 639, in _include
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 316, in _strip
+    event = next()
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 589, in _flatten
+    for event in self._flatten(value, ctxt, **vars)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 579, in _flatten
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 272, in _ensure
+    stream = iter(stream)
+TypeError: 'Href' object is not iterable
+2020-09-13 19:48:45,963 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 19:48:45,963 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 19:50:18,508 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 19:50:19,919 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 19:50:19,942 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-13 19:50:20,072 Trac[chrome] ERROR: Genshi TypeError error while rendering template (unknown template location)
+Traceback (most recent call last):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/chrome.py", line 1871, in _iterable_genshi_content
+    for chunk in stream.serialize(method, **kwargs):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 477, in __call__
+    for kind, data, _ in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 831, in __call__
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 671, in __call__
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 776, in __call__
+    for kind, data, pos in chain(stream, [(None, None, None)]):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 596, in __call__
+    for ev in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/chrome.py", line 1902, in _strip_accesskeys
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/chrome.py", line 1891, in _generate
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 639, in _include
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 379, in _match
+    ctxt, start=idx + 1, **vars):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 379, in _match
+    ctxt, start=idx + 1, **vars):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 327, in _match
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 579, in _flatten
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/path.py", line 581, in _generate
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 639, in _include
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 316, in _strip
+    event = next()
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 579, in _flatten
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/path.py", line 581, in _generate
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 639, in _include
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 316, in _strip
+    event = next()
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 589, in _flatten
+    for event in self._flatten(value, ctxt, **vars)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 579, in _flatten
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 272, in _ensure
+    stream = iter(stream)
+TypeError: 'Href' object is not iterable
+2020-09-13 19:50:20,129 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 19:50:20,130 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 19:50:26,379 Trac[chrome] ERROR: Genshi TypeError error while rendering template (unknown template location)
+Traceback (most recent call last):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/chrome.py", line 1871, in _iterable_genshi_content
+    for chunk in stream.serialize(method, **kwargs):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 477, in __call__
+    for kind, data, _ in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 831, in __call__
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 671, in __call__
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 776, in __call__
+    for kind, data, pos in chain(stream, [(None, None, None)]):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 596, in __call__
+    for ev in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/chrome.py", line 1902, in _strip_accesskeys
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/chrome.py", line 1891, in _generate
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 639, in _include
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 379, in _match
+    ctxt, start=idx + 1, **vars):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 379, in _match
+    ctxt, start=idx + 1, **vars):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 327, in _match
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 579, in _flatten
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/path.py", line 581, in _generate
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 639, in _include
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 316, in _strip
+    event = next()
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 579, in _flatten
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/path.py", line 581, in _generate
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 639, in _include
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 316, in _strip
+    event = next()
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 589, in _flatten
+    for event in self._flatten(value, ctxt, **vars)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 579, in _flatten
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 272, in _ensure
+    stream = iter(stream)
+TypeError: 'Href' object is not iterable
+2020-09-13 19:50:26,433 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 19:50:26,435 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 19:51:51,074 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 19:51:52,455 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 19:51:52,474 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-13 19:51:52,670 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 19:51:52,671 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 19:53:33,077 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 19:53:34,689 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 19:53:34,716 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-13 19:53:34,908 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 19:53:34,908 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 19:54:47,412 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 19:54:48,817 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 19:54:48,837 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-13 19:54:49,032 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 19:54:49,032 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 19:55:59,624 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 19:56:01,054 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 19:56:01,078 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-13 19:56:01,283 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 19:56:01,284 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 19:59:02,989 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 19:59:04,487 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 19:59:04,515 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-13 19:59:04,691 Trac[chrome] ERROR: Genshi TypeError error while rendering template (unknown template location)
+Traceback (most recent call last):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/chrome.py", line 1871, in _iterable_genshi_content
+    for chunk in stream.serialize(method, **kwargs):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 477, in __call__
+    for kind, data, _ in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 831, in __call__
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 671, in __call__
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 776, in __call__
+    for kind, data, pos in chain(stream, [(None, None, None)]):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 596, in __call__
+    for ev in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/chrome.py", line 1902, in _strip_accesskeys
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/chrome.py", line 1891, in _generate
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 639, in _include
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 379, in _match
+    ctxt, start=idx + 1, **vars):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 379, in _match
+    ctxt, start=idx + 1, **vars):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 327, in _match
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 579, in _flatten
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/path.py", line 588, in _generate
+    subevent = next()
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 639, in _include
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 316, in _strip
+    event = next()
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 579, in _flatten
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/path.py", line 588, in _generate
+    subevent = next()
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 639, in _include
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 316, in _strip
+    event = next()
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 589, in _flatten
+    for event in self._flatten(value, ctxt, **vars)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 579, in _flatten
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 272, in _ensure
+    stream = iter(stream)
+TypeError: 'Href' object is not iterable
+2020-09-13 19:59:04,738 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 19:59:04,739 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 19:59:10,816 Trac[chrome] ERROR: Genshi TypeError error while rendering template (unknown template location)
+Traceback (most recent call last):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/chrome.py", line 1871, in _iterable_genshi_content
+    for chunk in stream.serialize(method, **kwargs):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 477, in __call__
+    for kind, data, _ in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 831, in __call__
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 671, in __call__
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 776, in __call__
+    for kind, data, pos in chain(stream, [(None, None, None)]):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 596, in __call__
+    for ev in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/chrome.py", line 1902, in _strip_accesskeys
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/chrome.py", line 1891, in _generate
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 639, in _include
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 379, in _match
+    ctxt, start=idx + 1, **vars):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 379, in _match
+    ctxt, start=idx + 1, **vars):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 327, in _match
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 579, in _flatten
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/path.py", line 588, in _generate
+    subevent = next()
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 639, in _include
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 316, in _strip
+    event = next()
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 579, in _flatten
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/path.py", line 588, in _generate
+    subevent = next()
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 639, in _include
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 316, in _strip
+    event = next()
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 589, in _flatten
+    for event in self._flatten(value, ctxt, **vars)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 579, in _flatten
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 272, in _ensure
+    stream = iter(stream)
+TypeError: 'Href' object is not iterable
+2020-09-13 19:59:10,857 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 19:59:10,857 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 19:59:13,730 Trac[chrome] ERROR: Genshi TypeError error while rendering template (unknown template location)
+Traceback (most recent call last):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/chrome.py", line 1871, in _iterable_genshi_content
+    for chunk in stream.serialize(method, **kwargs):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 477, in __call__
+    for kind, data, _ in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 831, in __call__
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 671, in __call__
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 776, in __call__
+    for kind, data, pos in chain(stream, [(None, None, None)]):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 596, in __call__
+    for ev in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/chrome.py", line 1902, in _strip_accesskeys
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/chrome.py", line 1891, in _generate
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 639, in _include
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 379, in _match
+    ctxt, start=idx + 1, **vars):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 379, in _match
+    ctxt, start=idx + 1, **vars):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 327, in _match
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 579, in _flatten
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/path.py", line 588, in _generate
+    subevent = next()
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 639, in _include
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 316, in _strip
+    event = next()
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 579, in _flatten
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/path.py", line 588, in _generate
+    subevent = next()
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 639, in _include
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 316, in _strip
+    event = next()
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 589, in _flatten
+    for event in self._flatten(value, ctxt, **vars)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 579, in _flatten
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 272, in _ensure
+    stream = iter(stream)
+TypeError: 'Href' object is not iterable
+2020-09-13 19:59:13,777 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 19:59:13,778 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 20:00:01,448 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 20:00:02,933 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 20:00:02,962 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-13 20:00:03,155 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 20:00:03,156 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 20:01:27,491 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 20:01:28,910 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 20:01:28,937 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-13 20:01:29,154 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 20:01:29,155 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 20:03:57,951 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 20:03:59,372 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 20:03:59,398 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-13 20:03:59,613 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 20:03:59,613 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 20:05:26,373 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 20:05:28,000 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 20:05:28,020 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-13 20:05:28,173 Trac[chrome] ERROR: Genshi TypeError error while rendering template (unknown template location)
+Traceback (most recent call last):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/chrome.py", line 1871, in _iterable_genshi_content
+    for chunk in stream.serialize(method, **kwargs):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 477, in __call__
+    for kind, data, _ in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 831, in __call__
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 671, in __call__
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 776, in __call__
+    for kind, data, pos in chain(stream, [(None, None, None)]):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 596, in __call__
+    for ev in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/chrome.py", line 1902, in _strip_accesskeys
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/chrome.py", line 1891, in _generate
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 639, in _include
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 379, in _match
+    ctxt, start=idx + 1, **vars):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 379, in _match
+    ctxt, start=idx + 1, **vars):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 327, in _match
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 579, in _flatten
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/path.py", line 588, in _generate
+    subevent = next()
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 639, in _include
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 316, in _strip
+    event = next()
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 579, in _flatten
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/path.py", line 588, in _generate
+    subevent = next()
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 639, in _include
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 316, in _strip
+    event = next()
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 589, in _flatten
+    for event in self._flatten(value, ctxt, **vars)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 579, in _flatten
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 272, in _ensure
+    stream = iter(stream)
+TypeError: 'Href' object is not iterable
+2020-09-13 20:05:28,231 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 20:05:28,232 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 20:06:10,993 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 20:06:12,386 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 20:06:12,412 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-13 20:06:12,643 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 20:06:12,643 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 20:11:03,952 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 20:11:05,789 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 20:11:05,809 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-13 20:11:06,108 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 20:11:06,108 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 20:15:24,685 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 20:15:26,088 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 20:15:26,107 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-13 20:15:26,251 Trac[chrome] ERROR: Genshi UndefinedError error while rendering template (unknown template location)
+Traceback (most recent call last):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/chrome.py", line 1871, in _iterable_genshi_content
+    for chunk in stream.serialize(method, **kwargs):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 477, in __call__
+    for kind, data, _ in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 831, in __call__
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 671, in __call__
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 776, in __call__
+    for kind, data, pos in chain(stream, [(None, None, None)]):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/output.py", line 596, in __call__
+    for ev in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/chrome.py", line 1902, in _strip_accesskeys
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/trac/web/chrome.py", line 1891, in _generate
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 639, in _include
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 379, in _match
+    ctxt, start=idx + 1, **vars):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 379, in _match
+    ctxt, start=idx + 1, **vars):
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 327, in _match
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 579, in _flatten
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/path.py", line 588, in _generate
+    subevent = next()
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 639, in _include
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 316, in _strip
+    event = next()
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 579, in _flatten
+    for kind, data, pos in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/core.py", line 292, in _ensure
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/path.py", line 588, in _generate
+    subevent = next()
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 639, in _include
+    for event in stream:
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/markup.py", line 316, in _strip
+    event = next()
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 589, in _flatten
+    for event in self._flatten(value, ctxt, **vars)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 599, in _flatten
+    result = _eval_expr(data, ctxt, vars)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/base.py", line 289, in _eval_expr
+    retval = expr.evaluate(ctxt)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/eval.py", line 178, in evaluate
+    return eval(self.code, _globals, {'__data__': data})
+  File "/home/ozgur/.cache/Python-Eggs/Tracwiki2doc-1.1-py2.7.egg-tmp/wiki2doc/templates/wiki2doc.html", line 150, in <Expression u'get_wiki_link.value'>
+    <a href="${get_wiki_link.value}" target="_blank">${get_wiki_link.value}</a>
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/eval.py", line 318, in lookup_attr
+    val = getattr(obj, key)
+  File "/home/ozgur/my-trac/local/lib/python2.7/site-packages/genshi/template/eval.py", line 279, in _die
+    raise UndefinedError(self._name, self._owner)
+UndefinedError: "get_wiki_link" not defined
+2020-09-13 20:15:26,302 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 20:15:26,302 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 20:26:02,771 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 20:26:04,189 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 20:26:04,211 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-13 20:26:04,433 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 20:26:04,434 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 20:26:14,745 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 20:26:14,745 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-13 20:28:14,279 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 20:28:15,826 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 20:28:15,854 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-13 20:28:16,103 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 20:28:16,104 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 20:29:27,019 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 20:29:28,406 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 20:29:28,425 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-13 20:29:28,662 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 20:29:28,663 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 20:29:59,143 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 20:30:00,569 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 20:30:00,590 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-13 20:30:00,829 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 20:30:00,830 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 20:30:07,242 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 20:30:07,242 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-13 20:33:38,386 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 20:33:40,094 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 20:33:40,116 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-13 20:33:40,318 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 20:33:40,318 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 20:33:54,629 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 20:33:54,629 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'
+2020-09-13 20:35:37,372 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 20:35:38,917 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 20:35:38,941 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-13 20:35:39,155 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 20:35:39,155 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 20:36:40,627 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 20:36:42,076 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 20:36:42,097 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-13 20:36:42,319 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 20:36:42,320 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
+2020-09-13 20:36:49,936 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 20:36:49,937 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki/metrics'

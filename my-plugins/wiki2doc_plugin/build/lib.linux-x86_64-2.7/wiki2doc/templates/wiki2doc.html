@@ -93,12 +93,14 @@
 				  	}
 					if(e.className === get_wiki_link.id){
 						get_wiki_link.value=e.value
+						document.getElementById('wiki_page_ref').href=e.value
+						document.getElementById('wiki_page_ref').innerHTML=e.value
 				  	}			
 	          	}
           }
 
           $("#create_report").click(function(){
-			  document.getElementById("loader").style.display = 'block';
+			  document.getElementById("loader").style.display = 'none';
               task = document.getElementById('task')
               selected_text = $('#task option:selected').text();
 			  console.log('selected_text:' + selected_text)
@@ -123,41 +125,37 @@
 
   <body>
     <div id="ctxtnav" class="nav"></div>
-
     <div id="content" class="wiki2doc">
       <h1>Wiki2Doc!</h1>
       <img src="${href.chrome('/hw/images/wiki2doc.jpg')}" />
     </div>
-
-    <div id="error_list" title="List of Errors!" style="display: block;">
+    <div id="error_list" title="List of Errors!" style="display: none;">
     </div>
     <br id="br_errorlog" style="display: block;"/>
-    <select id="errorlog" name="errorlog" style="display: block;">
+    <select id="errorlog" name="errorlog" style="display: none;">
         <option py:for="(message, name) in errorlog" class="$message" value="$name">$name</option>
     </select>
-    <select id="form" name="form" style="display: block;">
+    <select id="form" name="form" style="display: none;">
         <option py:for="(key, value) in form.items()" class="$key" value="$value">$key, $value</option>
     </select>
     <form id="wiki2doc" method="post">
       <label>Document Template link:</label>
 	  <input id="get_doc_template" type="text" name="get_doc_template" value=""/>
       <br/>
-	  <label>Wiki Page link:</label>
+	  <label>Wiki Page link: ( You can read the wiki page here -> <a href="" id="wiki_page_ref" target="_blank"></a> )</label>
       <input id="get_wiki_link" type="text" name="get_wiki_link" value=""/>
       <input id="create_report" type="submit" name="create_report" value="Create Wiki Doc"/>
     </form>
-
-    <p><i>Note:...</i></p>
+    <br/>
     <div id="dialog" title="Missing selection!" style="display: none;">
+       <p><i>Note:...</i></p>
        <p><i>Please select:</i></p>
-       <p><i>1. Project and IGR milestone that will populate APO specification checkbuttons</i></p>
-       <p><i>2. Select OGR milestone that will populate ogr tasks dropdown menu</i></p>
-       <p><i>3. Select APO specification checkboxes</i></p>
-       <p><i>4. Select an OGR task before clicking on Go button.</i></p>
+       <p><i>1.</i></p>
     </div>
     <div id="dialog_wait" title="Your request has been submitted!" style="display: none;">
        <p>Selected report is being prepared! When it is completed, you will receive a file with docm extension. Please wait until the file is ready to download!</p>
     </div>
     <div id="loader"></div>
+    <br/>
   </body>
 </html>
