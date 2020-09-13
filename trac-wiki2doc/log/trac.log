@@ -5136,3 +5136,8 @@ NameError: global name 'svg_filename' is not defined
 2020-09-13 18:23:47,523 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/attachment/wiki/metrics/Precisionrecall.svg'
 2020-09-13 18:39:04,248 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
 2020-09-13 18:39:05,821 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 18:48:01,572 Trac[env] INFO: -------------------------------- environment startup [Trac 1.4.2] --------------------------------
+2020-09-13 18:48:03,092 Trac[env] WARNING: [trac] base_url option not set in configuration, generated links may be incorrect
+2020-09-13 18:48:03,116 Trac[chrome] WARNING: Rendering Genshi template 'wiki2doc.html' (convert to Jinja2 before Trac 1.5.1)
+2020-09-13 18:48:03,409 Trac[chrome] WARNING: File your_project_logo.png not found in any of ['/home/ozgur/my-trac/trac-wiki2doc/htdocs']
+2020-09-13 18:48:03,409 Trac[main] WARNING: [127.0.0.1] HTTPNotFound: 404 Not Found (File your_project_logo.png not found), <RequestWithSession "GET '/chrome/site/your_project_logo.png'">, referrer 'http://127.0.0.1:8000/wiki2doc'
