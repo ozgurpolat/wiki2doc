@@ -28,7 +28,7 @@ from trac.env import open_environment
 from trac.perm import IPermissionRequestor
 from trac.util import content_disposition
 from trac.util.text import to_unicode
-from htmlentitydefs import name2codepoint
+#from htmlentitydefs import name2codepoint
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from itertools import groupby

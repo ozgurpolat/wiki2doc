@@ -28,7 +28,7 @@ from trac.env import open_environment
 from trac.perm import IPermissionRequestor
 from trac.util import content_disposition
 from trac.util.text import to_unicode
-from htmlentitydefs import name2codepoint
+#from htmlentitydefs import name2codepoint
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from itertools import groupby
@@ -75,7 +75,7 @@ class Wiki2Doc(Component):
             the intial loading of wiki2doc."""
 
         get_doc_template = get_base_url(req) + u'attachment/wiki/attachments/template.docx'
-        get_wiki_link = get_base_url(req) + u'wiki/helloworld'
+        get_wiki_link = get_base_url(req) + u'wiki/metrics'
         
         req_keys = {'create_report': u'Create Wiki Doc',
                     '__FORM_TOKEN': u'a59a7f79fdf7bd881c7b4197',
